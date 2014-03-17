@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat Mar 15 23:19:28 2014">
+<application name="pa" timeStamp="Mon Mar 17 15:52:59 2014">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="effd2ee028e14623b6fe6c628b91f08a" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -56,9 +56,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ZoomFit" value="1" type="JavaHandler"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="81" type="GuiMode"/>
+<property name="GuiMode" value="82" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="77" type="TclMode"/>
+<property name="TclMode" value="78" type="TclMode"/>
 <property name="ISEMode" value="0" type="ISEMode"/>
 </item>
 </section>
