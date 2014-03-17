@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchFunctionTable.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="busaccess_pkg" />
+            <top_module name="functiontable_pkg" />
+            <top_module name="glbl" />
+            <top_module name="misc_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchfunctiontable" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/testbenchfunctiontable/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchfunctiontable/per_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">per_en</obj_property>
+      <obj_property name="ObjectShortName">per_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchfunctiontable/per_wr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">per_wr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">per_wr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchfunctiontable/per_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">per_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">per_addr[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchfunctiontable/per_din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">per_din[15:0]</obj_property>
+      <obj_property name="ObjectShortName">per_din[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group7" type="group">
+      <obj_property name="label">Internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchfunctiontable/FUNC/load_tri" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">load_tri</obj_property>
+         <obj_property name="ObjectShortName">load_tri</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchfunctiontable/FUNC/tri_sin_invert" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tri_sin_invert</obj_property>
+         <obj_property name="ObjectShortName">tri_sin_invert</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchfunctiontable/FUNC/tri_tan_invert" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tri_tan_invert</obj_property>
+         <obj_property name="ObjectShortName">tri_tan_invert</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchfunctiontable/FUNC/tri_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">tri_addr[9:0]</obj_property>
+         <obj_property name="ObjectShortName">tri_addr[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchfunctiontable/FUNC/tri_sin_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">tri_sin_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">tri_sin_out[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchfunctiontable/FUNC/tri_tan_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">tri_tan_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">tri_tan_out[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchfunctiontable/FUNC/reg_dout_tri_sin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_dout_tri_sin[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_dout_tri_sin[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchfunctiontable/FUNC/reg_dout_tri_tan" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_dout_tri_tan[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_dout_tri_tan[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

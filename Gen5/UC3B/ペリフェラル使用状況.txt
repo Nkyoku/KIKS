@@ -1,0 +1,31 @@
+﻿・PLL
+	[0] -> CPUクロック (driver/clock.h)
+	[1] -> USBクロック (driver/clock.h)
+
+・PDCA
+	[0] -> 
+	[1] -> SPI送信 (driver/spi.cpp)
+	[2] -> キッカー送信 (driver/kicker.cpp)
+	[3] -> キッカー受信 (driver/kicker.cpp)
+	[4] -> デバッグ送信 (driver/debugIF.cpp)
+	[5] -> デバッグ受信 (driver/debugIF.cpp)
+	[6] -> 
+
+・USART
+	[0] -> デバッグ送受信 (driver/debugIF.cpp)
+	[1] -> IrDA 未使用
+	[2] -> キッカー送受信 (driver/kicker.cpp)
+
+・TIMER
+	[0] -> システムチック (FreeRTOS/port.cpp)
+	[1] -> 
+	[2] -> PDIライター (driver/debugIF.cpp)
+	
+・PWM
+	CLKA -> 時刻管理 (driver/time.cpp)
+	CLKB ->
+	[0] -> 時刻管理 (driver/time.cpp)
+	[1] -> 
+	...
+	
+	

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchXBee.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bustest_pkg" />
+            <top_module name="misc_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchxbee" />
+            <top_module name="textio" />
+            <top_module name="uarttest_pkg" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+            <top_module name="xbeecontroller_pkg" />
+            <top_module name="xbeerxfifo_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/testbenchxbee/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchxbee/XBEE/irq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">irq</obj_property>
+      <obj_property name="ObjectShortName">irq</obj_property>
+   </wvobject>
+   <wvobject fp_name="group38" type="group">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchxbee/XBEE/mem_wr_cr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr_cr</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_cr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/mem_wr_baud" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr_baud</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_baud</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/mem_rd_sr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_rd_sr</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_sr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/mem_rd_rxfifo" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_rd_rxfifo</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_rxfifo</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/mem_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/mem_data_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/mem_data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_data_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_out[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group12" type="group">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchxbee/XBEE/reg_id" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_id[3:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_id[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/reg_rxfc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_rxfc</obj_property>
+         <obj_property name="ObjectShortName">reg_rxfc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/reg_rxff" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_rxff</obj_property>
+         <obj_property name="ObjectShortName">reg_rxff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/reg_rxen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_rxen</obj_property>
+         <obj_property name="ObjectShortName">reg_rxen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/reg_rxlen" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_rxlen[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_rxlen[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/reg_baud" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_baud[9:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_baud[9:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group11" type="group">
+      <obj_property name="label">FIFO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchxbee/XBEE/rxfifo_sync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxfifo_sync</obj_property>
+         <obj_property name="ObjectShortName">rxfifo_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/rxfifo_cr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxfifo_cr</obj_property>
+         <obj_property name="ObjectShortName">rxfifo_cr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/rxfifo_length" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rxfifo_length[5:0]</obj_property>
+         <obj_property name="ObjectShortName">rxfifo_length[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/rxfifo_reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxfifo_reset</obj_property>
+         <obj_property name="ObjectShortName">rxfifo_reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/rxfifo_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rxfifo_wr[1:0]</obj_property>
+         <obj_property name="ObjectShortName">rxfifo_wr[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group13" type="group">
+      <obj_property name="label">Receiver</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchxbee/XBEE/uart_rx_ff2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_rx_ff2</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_ff2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/uart_rx_state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_rx_state</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/uart_rx_start" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_rx_start[2:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_start[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/uart_rx_sr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_rx_sr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_sr[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/uart_rx_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_rx_cnt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_cnt[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/uart_rx_bit_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_rx_bit_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_bit_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/uart_rx_buf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_rx_buf[7:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_buf[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group53" type="group">
+      <obj_property name="label">Handshake</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchxbee/XBEE/req_rx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_rx</obj_property>
+         <obj_property name="ObjectShortName">req_rx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/ack_rx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_rx</obj_property>
+         <obj_property name="ObjectShortName">ack_rx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/req_rxfifo" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_rxfifo</obj_property>
+         <obj_property name="ObjectShortName">req_rxfifo</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchxbee/XBEE/ack_rxfifo" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_rxfifo</obj_property>
+         <obj_property name="ObjectShortName">ack_rxfifo</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

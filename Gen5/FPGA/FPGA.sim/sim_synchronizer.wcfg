@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchSyncronizer.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="misc_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="synchronizer_pkg" />
+            <top_module name="testbenchsyncronizer" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/testbenchsyncronizer/clk1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchsyncronizer/clk2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk2</obj_property>
+      <obj_property name="ObjectShortName">clk2</obj_property>
+   </wvobject>
+   <wvobject fp_name="group13" type="group">
+      <obj_property name="label">Pass1-2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsyncronizer/sigi_clk1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sigi_clk1</obj_property>
+         <obj_property name="ObjectShortName">sigi_clk1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS12/req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req</obj_property>
+         <obj_property name="ObjectShortName">req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS12/req_ff1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_ff1</obj_property>
+         <obj_property name="ObjectShortName">req_ff1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS12/req_ff2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_ff2</obj_property>
+         <obj_property name="ObjectShortName">req_ff2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/sigo_clk2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sigo_clk2</obj_property>
+         <obj_property name="ObjectShortName">sigo_clk2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS12/ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack</obj_property>
+         <obj_property name="ObjectShortName">ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS12/ack_ff1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_ff1</obj_property>
+         <obj_property name="ObjectShortName">ack_ff1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS12/ack_ff2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_ff2</obj_property>
+         <obj_property name="ObjectShortName">ack_ff2</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group14" type="group">
+      <obj_property name="label">Pass2-1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsyncronizer/sigi_clk2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sigi_clk2</obj_property>
+         <obj_property name="ObjectShortName">sigi_clk2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS21/req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req</obj_property>
+         <obj_property name="ObjectShortName">req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS21/req_ff1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_ff1</obj_property>
+         <obj_property name="ObjectShortName">req_ff1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS21/req_ff2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_ff2</obj_property>
+         <obj_property name="ObjectShortName">req_ff2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/sigo_clk1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sigo_clk1</obj_property>
+         <obj_property name="ObjectShortName">sigo_clk1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS21/ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack</obj_property>
+         <obj_property name="ObjectShortName">ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS21/ack_ff1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_ff1</obj_property>
+         <obj_property name="ObjectShortName">ack_ff1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsyncronizer/UNIHS21/ack_ff2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_ff2</obj_property>
+         <obj_property name="ObjectShortName">ack_ff2</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

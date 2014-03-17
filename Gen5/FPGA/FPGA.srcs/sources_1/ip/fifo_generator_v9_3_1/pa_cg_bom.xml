@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+  <IPInstance name="FIFO_LOG">
+    <FileSets>
+      <FileSet generator="apply_current_project_options_generator">
+        <File name="./apply_current_project_options_generator.xlog" type="ignore" timestamp="Fri Mar 14 07:15:24 GMT 2014" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="model_parameter_resolution_generator">
+        <File name="./model_parameter_resolution_generator.xlog" type="ignore" timestamp="Fri Mar 14 07:15:24 GMT 2014" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="ip_xco_generator">
+        <File name="./FIFO_LOG.xco" type="xco" timestamp="Fri Mar 14 07:13:11 GMT 2014" checksum="0xFF8F5E8B"></File>
+      </FileSet>
+      <FileSet generator="associated_files_generator">
+        <File name="./FIFO_LOG/doc/fifo_generator_v9_3_vinfo.html" type="ignore" timestamp="Sat Jun 08 22:36:20 GMT 2013" checksum="0x9B56C5A6"></File>
+        <File name="./FIFO_LOG/fifo_generator_v9_3_readme.txt" type="ignore" timestamp="Sat Jun 08 22:36:20 GMT 2013" checksum="0x4A0AA28D"></File>
+      </FileSet>
+      <FileSet generator="ejava_generator">
+        <File name="./FIFO_LOG/example_design/FIFO_LOG_exdes.ucf" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x81CE16D2"></File>
+        <File name="./FIFO_LOG/example_design/FIFO_LOG_exdes.vhd" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0xC4275661"></File>
+        <File name="./FIFO_LOG/implement/implement.bat" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x9F14DA99"></File>
+        <File name="./FIFO_LOG/implement/implement.sh" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0xF8DC313C"></File>
+        <File name="./FIFO_LOG/implement/implement_synplify.bat" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x80FDA75B"></File>
+        <File name="./FIFO_LOG/implement/implement_synplify.sh" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x1DB37B59"></File>
+        <File name="./FIFO_LOG/implement/planAhead_ise.bat" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x764FF82A"></File>
+        <File name="./FIFO_LOG/implement/planAhead_ise.sh" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x37096EA5"></File>
+        <File name="./FIFO_LOG/implement/planAhead_ise.tcl" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0xEDD53124"></File>
+        <File name="./FIFO_LOG/implement/xst.prj" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0xF7A1CC81"></File>
+        <File name="./FIFO_LOG/implement/xst.scr" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0xC02D3172"></File>
+        <File name="./FIFO_LOG/simulation/FIFO_LOG_dgen.vhd" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x3FB910B3"></File>
+        <File name="./FIFO_LOG/simulation/FIFO_LOG_dverif.vhd" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x19ED747D"></File>
+        <File name="./FIFO_LOG/simulation/FIFO_LOG_pctrl.vhd" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x867F9512"></File>
+        <File name="./FIFO_LOG/simulation/FIFO_LOG_pkg.vhd" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x2A25FB28"></File>
+        <File name="./FIFO_LOG/simulation/FIFO_LOG_rng.vhd" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x6299E315"></File>
+        <File name="./FIFO_LOG/simulation/FIFO_LOG_synth.vhd" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0xC95E3001"></File>
+        <File name="./FIFO_LOG/simulation/FIFO_LOG_tb.vhd" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x8D55C417"></File>
+        <File name="./FIFO_LOG/simulation/functional/simulate_isim.bat" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x0E0DABAA"></File>
+        <File name="./FIFO_LOG/simulation/functional/simulate_isim.sh" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x80FEE95A"></File>
+        <File name="./FIFO_LOG/simulation/functional/simulate_mti.bat" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x0C3CDB0C"></File>
+        <File name="./FIFO_LOG/simulation/functional/simulate_mti.do" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0xCE4C17F5"></File>
+        <File name="./FIFO_LOG/simulation/functional/simulate_mti.sh" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x5FDBD750"></File>
+        <File name="./FIFO_LOG/simulation/functional/simulate_ncsim.bat" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x7F88DE51"></File>
+        <File name="./FIFO_LOG/simulation/functional/simulate_vcs.bat" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0xF9D0C47C"></File>
+        <File name="./FIFO_LOG/simulation/functional/ucli_commands.key" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x8C99290B"></File>
+        <File name="./FIFO_LOG/simulation/functional/vcs_session.tcl" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0xF7521804"></File>
+        <File name="./FIFO_LOG/simulation/functional/wave_isim.tcl" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x7060933A"></File>
+        <File name="./FIFO_LOG/simulation/functional/wave_mti.do" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0xF9271AB3"></File>
+        <File name="./FIFO_LOG/simulation/functional/wave_ncsim.sv" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0xD533A7E1"></File>
+        <File name="./FIFO_LOG/simulation/timing/simulate_isim.bat" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x8E634EDD"></File>
+        <File name="./FIFO_LOG/simulation/timing/simulate_isim.sh" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x60EA5131"></File>
+        <File name="./FIFO_LOG/simulation/timing/simulate_mti.bat" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x0C3CDB0C"></File>
+        <File name="./FIFO_LOG/simulation/timing/simulate_mti.do" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x5791E9B3"></File>
+        <File name="./FIFO_LOG/simulation/timing/simulate_mti.sh" type="ignore" timestamp="Fri Mar 14 07:13:14 GMT 2014" checksum="0x5FDBD750"></File>
+        <File name="./FIFO_LOG/simulation/timing/simulate_ncsim.bat" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x1BE89ACE"></File>
+        <File name="./FIFO_LOG/simulation/timing/simulate_vcs.bat" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0xA9FF4446"></File>
+        <File name="./FIFO_LOG/simulation/timing/ucli_commands.key" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x8C99290B"></File>
+        <File name="./FIFO_LOG/simulation/timing/vcs_session.tcl" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0xE4713928"></File>
+        <File name="./FIFO_LOG/simulation/timing/wave_isim.tcl" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x7060933A"></File>
+        <File name="./FIFO_LOG/simulation/timing/wave_mti.do" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0x5D35E6C1"></File>
+        <File name="./FIFO_LOG/simulation/timing/wave_ncsim.sv" type="ignore" timestamp="Fri Mar 14 07:13:15 GMT 2014" checksum="0xD533A7E1"></File>
+      </FileSet>
+      <FileSet generator="ngc_netlist_generator">
+        <File name="./FIFO_LOG.ngc" type="ngc" timestamp="Fri Mar 14 07:15:04 GMT 2014" checksum="0x5671C570"></File>
+      </FileSet>
+      <FileSet generator="obfuscate_netlist_generator">
+        <File name="./obfuscate_netlist_generator.xlog" type="ignore" timestamp="Fri Mar 14 07:15:24 GMT 2014" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="padded_implementation_netlist_generator">
+        <File name="./padded_implementation_netlist_generator.xlog" type="ignore" timestamp="Fri Mar 14 07:15:24 GMT 2014" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="instantiation_template_generator">
+        <File name="./FIFO_LOG.vho" type="vho" timestamp="Fri Mar 14 07:15:05 GMT 2014" checksum="0xD8C00910"></File>
+      </FileSet>
+      <FileSet generator="structural_simulation_model_generator">
+        <File name="./FIFO_LOG.vhd" type="vhdl" timestamp="Fri Mar 14 07:15:05 GMT 2014" checksum="0x48DFE027"></File>
+      </FileSet>
+      <FileSet generator="all_documents_generator">
+        <File name="./FIFO_LOG/doc/fifo_generator_v9_3_readme.txt" type="ignore" timestamp="Fri Mar 14 07:15:05 GMT 2014" checksum="0x4A0AA28D"></File>
+        <File name="./FIFO_LOG/doc/fifo_generator_v9_3_vinfo.html" type="ignore" timestamp="Fri Mar 14 07:15:05 GMT 2014" checksum="0x9B56C5A6"></File>
+        <File name="./FIFO_LOG/doc/pg057-fifo-generator.pdf" type="ignore" timestamp="Fri Mar 14 07:15:06 GMT 2014" checksum="0x1E7EB5CF"></File>
+      </FileSet>
+      <FileSet generator="readme_documents_generator">
+        <File name="./FIFO_LOG/doc/fifo_generator_v9_3_readme.txt" type="ignore" timestamp="Fri Mar 14 07:15:06 GMT 2014" checksum="0x4A0AA28D"></File>
+      </FileSet>
+      <FileSet generator="asy_generator">
+        <File name="./FIFO_LOG.asy" type="asy" timestamp="Fri Mar 14 07:15:11 GMT 2014" checksum="0x6AD073FE"></File>
+      </FileSet>
+      <FileSet generator="xmdf_generator">
+        <File name="./FIFO_LOG_xmdf.tcl" type="tclXmdf" timestamp="Fri Mar 14 07:15:11 GMT 2014" checksum="0x7BAA1A2F"></File>
+      </FileSet>
+      <FileSet generator="synthesis_ise_generator">
+        <File name="./FIFO_LOG.gise" type="ignore" timestamp="Fri Mar 14 07:15:21 GMT 2014" checksum="0x8230BD56"></File>
+        <File name="./FIFO_LOG.xise" type="ignore" timestamp="Fri Mar 14 07:15:21 GMT 2014" checksum="0x4A3E117A"></File>
+      </FileSet>
+      <FileSet generator="ise_generator">
+        <File name="./FIFO_LOG.gise" type="ignore" timestamp="Fri Mar 14 07:15:24 GMT 2014" checksum="0xC078BE38"></File>
+        <File name="./FIFO_LOG.xise" type="ignore" timestamp="Fri Mar 14 07:15:24 GMT 2014" checksum="0xF73F0915"></File>
+      </FileSet>
+      <FileSet generator="deliver_readme_generator">
+        <File name="./deliver_readme_generator.xlog" type="ignore" timestamp="Fri Mar 14 07:15:24 GMT 2014" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="flist_generator">
+        <File name="./FIFO_LOG_flist.txt" type="ignore" timestamp="Fri Mar 14 07:15:24 GMT 2014" checksum="0xBB6D6136"></File>
+      </FileSet>
+    </FileSets>
+  </IPInstance>
+</BillOfMaterials>

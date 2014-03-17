@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchGlobal.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="ads7950_pkg" />
+            <top_module name="clockgenerator_pkg" />
+            <top_module name="dmem_pkg" />
+            <top_module name="iomanager_pkg" />
+            <top_module name="misc_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="spislave_pkg" />
+            <top_module name="spitest_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchglobal" />
+            <top_module name="textio" />
+            <top_module name="uarttest_pkg" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+            <top_module name="xbeecontroller_pkg" />
+            <top_module name="xbeerxfifo_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/testbenchglobal/Main_inst/ninit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ninit</obj_property>
+      <obj_property name="ObjectShortName">ninit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/arbit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">arbit</obj_property>
+      <obj_property name="ObjectShortName">arbit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/spi_ncs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">spi_ncs</obj_property>
+      <obj_property name="ObjectShortName">spi_ncs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/spi_sclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">spi_sclk</obj_property>
+      <obj_property name="ObjectShortName">spi_sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/spi_mosi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">spi_mosi</obj_property>
+      <obj_property name="ObjectShortName">spi_mosi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/spi_miso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">spi_miso</obj_property>
+      <obj_property name="ObjectShortName">spi_miso</obj_property>
+   </wvobject>
+   <wvobject fp_name="group28" type="group">
+      <obj_property name="label">Internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchglobal/Main_inst/clk_sys" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_sys</obj_property>
+         <obj_property name="ObjectShortName">clk_sys</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/clk_per" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_per</obj_property>
+         <obj_property name="ObjectShortName">clk_per</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group43" type="group">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchglobal/Main_inst/mem_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_en</obj_property>
+         <obj_property name="ObjectShortName">mem_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/mem_wr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr</obj_property>
+         <obj_property name="ObjectShortName">mem_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/mem_wait" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wait</obj_property>
+         <obj_property name="ObjectShortName">mem_wait</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/mem_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/mem_din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_din[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_din[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/mem_dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_dout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_dout[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group57" type="group">
+      <obj_property name="label">XBEE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group63" type="group">
+         <obj_property name="label">Register</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/reg_rxen" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">reg_rxen</obj_property>
+            <obj_property name="ObjectShortName">reg_rxen</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/reg_rxff" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">reg_rxff</obj_property>
+            <obj_property name="ObjectShortName">reg_rxff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/reg_rxfc" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">reg_rxfc</obj_property>
+            <obj_property name="ObjectShortName">reg_rxfc</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/reg_id" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">reg_id[3:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_id[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/reg_baud" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">reg_baud[9:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_baud[9:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/reg_rxlen" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">reg_rxlen[5:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_rxlen[5:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/reg_rxfifo" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">reg_rxfifo[15:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_rxfifo[15:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/uart_rx_ff2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_rx_ff2</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_ff2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/uart_rx_state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_rx_state</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/uart_rx_buf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_rx_buf[7:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_buf[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/rxfifo_sync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxfifo_sync</obj_property>
+         <obj_property name="ObjectShortName">rxfifo_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/rxfifo_cr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxfifo_cr</obj_property>
+         <obj_property name="ObjectShortName">rxfifo_cr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/rxfifo_length" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rxfifo_length[5:0]</obj_property>
+         <obj_property name="ObjectShortName">rxfifo_length[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/rxfifo_reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxfifo_reset</obj_property>
+         <obj_property name="ObjectShortName">rxfifo_reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/rxfifo_wren" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxfifo_wren</obj_property>
+         <obj_property name="ObjectShortName">rxfifo_wren</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/req_rx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_rx</obj_property>
+         <obj_property name="ObjectShortName">req_rx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/ack_rx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_rx</obj_property>
+         <obj_property name="ObjectShortName">ack_rx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/req_rxfifo" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_rxfifo</obj_property>
+         <obj_property name="ObjectShortName">req_rxfifo</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/XBEE/ack_rxfifo" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_rxfifo</obj_property>
+         <obj_property name="ObjectShortName">ack_rxfifo</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group48" type="group">
+      <obj_property name="label">IOM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchglobal/Main_inst/IOM/pwr_5v" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pwr_5v</obj_property>
+         <obj_property name="ObjectShortName">pwr_5v</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/IOM/reg_pwr5v" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_pwr5v</obj_property>
+         <obj_property name="ObjectShortName">reg_pwr5v</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/IOM/mem_select" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_select</obj_property>
+         <obj_property name="ObjectShortName">mem_select</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/IOM/mem_wr_pwr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr_pwr</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_pwr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/IOM/mem_wr_led" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr_led</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_led</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchglobal/Main_inst/IOM/mem_rd_pwr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_rd_pwr</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_pwr</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,48 @@
+﻿○形式
+	バイト	名前(標準値)			説明(値の範囲)
+	-----------------------------------------------------------
+	[0]		UPPER_LIMIT				充電終止電圧[V] (0～254)
+	[1]		LOWER LIMIT				充電開始電圧[V] (0～254)
+	[2][3]	COEFFICIENT_SUPPLY		電源電圧係数 (0～65534)
+	[4][5]	COEFFICIENT_CAPACITOR	キャパシタ電圧係数 (0～65534)
+	[6][7]	COEFFICIENT_ENERGY		エネルギー係数 (0～65534)
+
+
+
+○計算法
+	・COEFFICIENT_SUPPLY
+		Rb / (Rt + Rb) * Vsup / Vref * 2048 * Coeff / 2^16 / 10 = Vsup
+		より
+		Coeff = (Rt + Rb) / Rb * Vref / 2048 * 2^16 * 10
+		
+	・COEFFICIENT_CAPACITOR
+		同様に
+		Coeff = (Rt + Rb) / Rb * Vref / ((Ri + Rf) / Ri) / 2048 * 2^16
+		
+	・COEFFICIENT_ENERGY
+		Coeff = (COEFFICIENT_CAPACITOR / 2^4)^2 * C
+		
+		
+		
+○格納値
+	・1番
+		COEFFICIENT_SUPPLY		Rt=99.9kΩ, Rb=10.00kΩ, Vref=2.493V
+								-> 8767
+		COEFFICIENT_CAPACITOR	Rt=1506kΩ, Rb=0.999kΩ, Ri=10.00kΩ, Rf=1.000kΩ
+								-> 10940
+		COEFFICIENT_ENERGY		C=3061uF
+								-> 1431
+		バイナリ				-> FF FF 3F 22 BC 2A 97 05
+		
+		
+	・2番
+		未調整
+		
+	・3番
+		未調整
+		
+		
+		
+		
+		
+		

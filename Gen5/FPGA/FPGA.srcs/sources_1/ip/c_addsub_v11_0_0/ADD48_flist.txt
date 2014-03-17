@@ -1,0 +1,13 @@
+# Output products list for <ADD48>
+ADD48.asy
+ADD48.gise
+ADD48.ngc
+ADD48.vhd
+ADD48.vho
+ADD48.xco
+ADD48.xise
+ADD48\doc\c_addsub_v11_0_readme.txt
+ADD48\doc\c_addsub_v11_0_vinfo.html
+ADD48\doc\ds214_addsub.pdf
+ADD48_flist.txt
+ADD48_xmdf.tcl

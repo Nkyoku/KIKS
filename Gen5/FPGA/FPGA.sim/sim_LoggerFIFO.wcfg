@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchLoggerFIFO.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bustest_pkg" />
+            <top_module name="glbl" />
+            <top_module name="loggerfifo_pkg" />
+            <top_module name="misc_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchloggerfifo" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/testbenchloggerfifo/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchloggerfifo/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="group21" type="group">
+      <obj_property name="label">PBUS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/pbus_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pbus_en</obj_property>
+         <obj_property name="ObjectShortName">pbus_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/pbus_wr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pbus_wr</obj_property>
+         <obj_property name="ObjectShortName">pbus_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/pbus_wait" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pbus_wait</obj_property>
+         <obj_property name="ObjectShortName">pbus_wait</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/pbus_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pbus_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">pbus_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/pbus_data_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pbus_data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">pbus_data_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/pbus_data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pbus_data_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">pbus_data_out[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group28" type="group">
+      <obj_property name="label">XBUS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/xbus_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_en</obj_property>
+         <obj_property name="ObjectShortName">xbus_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/xbus_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_wr[1:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_wr[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/xbus_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/xbus_data_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_data_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/xbus_data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_data_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_data_out[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group15" type="group">
+      <obj_property name="label">FIFO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/FIFO_inst/wr_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/FIFO_inst/din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">din[15:0]</obj_property>
+         <obj_property name="ObjectShortName">din[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/FIFO_inst/rd_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/FIFO_inst/dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/FIFO_inst/data_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data_count[9:0]</obj_property>
+         <obj_property name="ObjectShortName">data_count[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/fifo_wr_strobe" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_wr_strobe</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr_strobe</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/fifo_wr_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_wr_count[1:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr_count[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/fifo_wr_length" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_wr_length[1:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr_length[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/fifo_wr_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_wr_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr_data[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/fifo_wr_data0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_wr_data0[15:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr_data0[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/fifo_wr_data1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_wr_data1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr_data1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/fifo_wr_data2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_wr_data2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr_data2[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group43" type="group">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/xbus_reg_length" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_length[1:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_length[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/xbus_reg_id" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_id[9:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_id[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/xbus_reg_datal" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_datal[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_datal[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchloggerfifo/LOGFIFO/xbus_reg_datah" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_datah[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_datah[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

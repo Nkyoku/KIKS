@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchADC.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="ads7950_pkg" />
+            <top_module name="bustest_pkg" />
+            <top_module name="glbl" />
+            <top_module name="misc_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="spitest_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchadc" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/testbenchadc/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchadc/clk_adc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_adc</obj_property>
+      <obj_property name="ObjectShortName">clk_adc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchadc/sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sync</obj_property>
+      <obj_property name="ObjectShortName">sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchadc/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="group15" type="group">
+      <obj_property name="label">SPI</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchadc/ADC/spi1_ncs" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi1_ncs</obj_property>
+         <obj_property name="ObjectShortName">spi1_ncs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi1_sclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi1_sclk</obj_property>
+         <obj_property name="ObjectShortName">spi1_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi1_mosi" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi1_mosi</obj_property>
+         <obj_property name="ObjectShortName">spi1_mosi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi1_miso" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi1_miso</obj_property>
+         <obj_property name="ObjectShortName">spi1_miso</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi2_ncs" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi2_ncs</obj_property>
+         <obj_property name="ObjectShortName">spi2_ncs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi2_sclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi2_sclk</obj_property>
+         <obj_property name="ObjectShortName">spi2_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi2_mosi" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi2_mosi</obj_property>
+         <obj_property name="ObjectShortName">spi2_mosi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi2_miso" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi2_miso</obj_property>
+         <obj_property name="ObjectShortName">spi2_miso</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group16" type="group">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchadc/ADC/mem_wr_cr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr_cr</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_cr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/mem_wr_tx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr_tx</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_tx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/mem_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/mem_data_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/mem_data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_data_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_out[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/reg_tx" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_tx[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_tx[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group28" type="group">
+      <obj_property name="label">Internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchadc/ADC/spi_state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_state</obj_property>
+         <obj_property name="ObjectShortName">spi_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi_phase" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_phase</obj_property>
+         <obj_property name="ObjectShortName">spi_phase</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi_bit_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_bit_cnt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">spi_bit_cnt[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi_msb" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_msb</obj_property>
+         <obj_property name="ObjectShortName">spi_msb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi_sr1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_sr1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">spi_sr1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/spi_sr2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_sr2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">spi_sr2[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group29" type="group">
+      <obj_property name="label">Handshake</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchadc/ADC/req_tx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_tx</obj_property>
+         <obj_property name="ObjectShortName">req_tx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/req_tx_delay" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_tx_delay</obj_property>
+         <obj_property name="ObjectShortName">req_tx_delay</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/ack_tx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_tx</obj_property>
+         <obj_property name="ObjectShortName">ack_tx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/req_rx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_rx</obj_property>
+         <obj_property name="ObjectShortName">req_rx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/req_rx_delay" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_rx_delay</obj_property>
+         <obj_property name="ObjectShortName">req_rx_delay</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/ack_rx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_rx</obj_property>
+         <obj_property name="ObjectShortName">ack_rx</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group47" type="group">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchadc/ADC/converting" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">converting</obj_property>
+         <obj_property name="ObjectShortName">converting</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/converted" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">converted</obj_property>
+         <obj_property name="ObjectShortName">converted</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/result10" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">result10[11:0]</obj_property>
+         <obj_property name="ObjectShortName">result10[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/result11" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">result11[11:0]</obj_property>
+         <obj_property name="ObjectShortName">result11[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/result12" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">result12[11:0]</obj_property>
+         <obj_property name="ObjectShortName">result12[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/result13" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">result13[11:0]</obj_property>
+         <obj_property name="ObjectShortName">result13[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/result20" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">result20[11:0]</obj_property>
+         <obj_property name="ObjectShortName">result20[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/result21" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">result21[11:0]</obj_property>
+         <obj_property name="ObjectShortName">result21[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/result22" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">result22[11:0]</obj_property>
+         <obj_property name="ObjectShortName">result22[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchadc/ADC/result23" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">result23[11:0]</obj_property>
+         <obj_property name="ObjectShortName">result23[11:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\common">
+      <UniqueIdentifier>{78e5ef88-7d96-49de-b13b-0b46a7dc4eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\common">
+      <UniqueIdentifier>{43cf31ad-7348-4b36-96fe-6554f8930419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\kicker">
+      <UniqueIdentifier>{e1085854-7f9d-49a1-99cb-e5e62d70562f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\kicker">
+      <UniqueIdentifier>{02fc7904-811d-465b-98dd-0fa840ccad3b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\common\trace.cpp">
+      <Filter>ソース ファイル\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\kicker\hexload.cpp">
+      <Filter>ソース ファイル\kicker</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\kicker\kicker.cpp">
+      <Filter>ソース ファイル\kicker</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\kicker\kicker6A.cpp">
+      <Filter>ソース ファイル\kicker</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\kicker\kicker5.cpp">
+      <Filter>ソース ファイル\kicker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\common\trace.h">
+      <Filter>ヘッダー ファイル\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\kicker\hexload.h">
+      <Filter>ヘッダー ファイル\kicker</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\kicker\kicker.h">
+      <Filter>ヘッダー ファイル\kicker</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\kicker\request.h">
+      <Filter>ヘッダー ファイル\kicker</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\kicker\kicker6A.h">
+      <Filter>ヘッダー ファイル\kicker</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\common\convstr.h">
+      <Filter>ヘッダー ファイル\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\kicker\kicker5.h">
+      <Filter>ヘッダー ファイル\kicker</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,38 @@
+○Q=on時, 電流経路:Vin→L→Q→GND
+L=200e-6, R=115e-3
+
+L(dI/dt) = Vi - R*I
+(dI/dt) = (Vi/L) - (R/L)*I
+[1/{(R/L)*I - (Vi/L)}]dI = -dt
+[(L/R)/{I - (Vi/R)}]dI = -dt
+log(I-(Vi/R)) = -(R/L)*t+A1
+I = (Vi/R)*[1-e^{-(R/L)*t}]
+
+I = I0+(Vi/L)*t で十分
+
+
+
+○Q=off時, 電流経路:Vin→L→D→C→GND
+Vd=1, R=105e-3, I0=任意
+
+Vo+Vd+RI = -L(dI/dt)+Vin
+(dI/dt) = -(R/L)*{I+(Vo+Vd-Vin)/R}
+log{I+(Vo+Vd-Vin)/R} = -(R/L)*t+A2
+I = -((Vo-Vin+Vd)/R)+A2*e^{-(R/L)*t}
+I = -((Vo-Vin+Vd)/R)+(I0+((Vo-Vin+Vd)/R))*e^{-(R/L)*t}
+I = I0*e^{-(R/L)*t}-{(Vo-Vin+Vd)/R}*[1-e^{-(R/L)*t}]
+
+I = I0-{(Vo+Vd-Vin)/L}*t で十分
+
+
+
+
+○電流制御
+Vi=16, It=5, Ib=3として、
+ton0 = It*L/Vi					= 62.5[us]
+ton = (It-Ib)*L/Vi				= 25[us]
+toff = (It-Ib)*L/(Vo+Vd-Vin)	= 400/(Vo-Vin+1)[us]
+
+
+
+

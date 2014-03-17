@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchUART16550.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bustest_pkg" />
+            <top_module name="glbl" />
+            <top_module name="misc_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchuart16550" />
+            <top_module name="uart16550_pkg" />
+            <top_module name="uarttest_pkg" />
+            <top_module name="vcomponents" />
+            <top_module name="vl_types" />
+            <top_module name="wishbonebridge_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/testbenchuart16550/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchuart16550/omsp_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">omsp_reset</obj_property>
+      <obj_property name="ObjectShortName">omsp_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="group24" type="group">
+      <obj_property name="label">UART</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchuart16550/UARTCON/stx_pad_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">stx_pad_o</obj_property>
+         <obj_property name="ObjectShortName">stx_pad_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/UARTCON/srx_pad_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">srx_pad_i</obj_property>
+         <obj_property name="ObjectShortName">srx_pad_i</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group45" type="group">
+      <obj_property name="label">Internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchuart16550/UARTCON/wb_interface/wb_adr_int" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wb_adr_int[2:0]</obj_property>
+         <obj_property name="ObjectShortName">wb_adr_int[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/UARTCON/regs/wb_addr_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wb_addr_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">wb_addr_i[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group20" type="group">
+      <obj_property name="label">Wishbone</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchuart16550/wb1_rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wb1_rst</obj_property>
+         <obj_property name="ObjectShortName">wb1_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/wb1_cyc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wb1_cyc</obj_property>
+         <obj_property name="ObjectShortName">wb1_cyc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/wb1_stb" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wb1_stb</obj_property>
+         <obj_property name="ObjectShortName">wb1_stb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/wb1_we" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wb1_we</obj_property>
+         <obj_property name="ObjectShortName">wb1_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/UARTCON/wb_ack_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wb_ack_o</obj_property>
+         <obj_property name="ObjectShortName">wb_ack_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/wb1_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wb1_addr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">wb1_addr[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/wb1_dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wb1_dout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">wb1_dout[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/wb1_din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wb1_din[7:0]</obj_property>
+         <obj_property name="ObjectShortName">wb1_din[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/wb1_irq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wb1_irq</obj_property>
+         <obj_property name="ObjectShortName">wb1_irq</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group19" type="group">
+      <obj_property name="label">XBUS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchuart16550/mem_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_en</obj_property>
+         <obj_property name="ObjectShortName">mem_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/mem_wr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr</obj_property>
+         <obj_property name="ObjectShortName">mem_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/mem_wait" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wait</obj_property>
+         <obj_property name="ObjectShortName">mem_wait</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/mem_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/mem_din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_din[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_din[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/mem_dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_dout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_dout[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/WBRIDGE1/irq_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">irq_out</obj_property>
+         <obj_property name="ObjectShortName">irq_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchuart16550/WBRIDGE1/irq_acc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">irq_acc</obj_property>
+         <obj_property name="ObjectShortName">irq_acc</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

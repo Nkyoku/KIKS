@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchSimpleSPI.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bustest_pkg" />
+            <top_module name="glbl" />
+            <top_module name="misc_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="simplespi_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchsimplespi" />
+            <top_module name="vcomponents" />
+            <top_module name="vl_types" />
+            <top_module name="wishbonebridge_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/testbenchsimplespi/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchsimplespi/omsp_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">omsp_reset</obj_property>
+      <obj_property name="ObjectShortName">omsp_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="group26" type="group">
+      <obj_property name="label">SPI</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/sck_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sck_o</obj_property>
+         <obj_property name="ObjectShortName">sck_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/mosi_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mosi_o</obj_property>
+         <obj_property name="ObjectShortName">mosi_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/miso_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">miso_i</obj_property>
+         <obj_property name="ObjectShortName">miso_i</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group25" type="group">
+      <obj_property name="label">Wishbone</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/rst_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_i</obj_property>
+         <obj_property name="ObjectShortName">rst_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/cyc_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cyc_i</obj_property>
+         <obj_property name="ObjectShortName">cyc_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/stb_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">stb_i</obj_property>
+         <obj_property name="ObjectShortName">stb_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/we_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">we_i</obj_property>
+         <obj_property name="ObjectShortName">we_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/ack_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_o</obj_property>
+         <obj_property name="ObjectShortName">ack_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/adr_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adr_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">adr_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/dat_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dat_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_i[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/dat_o" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dat_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_o[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group19" type="group">
+      <obj_property name="label">XBUS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsimplespi/WBRIDGE1/xbus_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_en</obj_property>
+         <obj_property name="ObjectShortName">xbus_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/WBRIDGE1/xbus_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_wr[1:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_wr[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/WBRIDGE1/xbus_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/WBRIDGE1/xbus_data_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_data_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/WBRIDGE1/xbus_data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_data_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_data_out[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group41" type="group">
+      <obj_property name="label">Internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/ena" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/clkcnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">clkcnt[11:0]</obj_property>
+         <obj_property name="ObjectShortName">clkcnt[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/wfwe" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wfwe</obj_property>
+         <obj_property name="ObjectShortName">wfwe</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/wfempty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wfempty</obj_property>
+         <obj_property name="ObjectShortName">wfempty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsimplespi/SPIMST/spsr[5]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">spsr[5]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

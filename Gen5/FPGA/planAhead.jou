@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Sat Mar 15 23:07:13 2014
+# Process ID: 3740
+# Log file: D:/work/KIKS/Gen5/FPGA/planAhead.log
+# Journal file: D:/work/KIKS/Gen5/FPGA\planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\work\KIKS\Gen5\FPGA\FPGA.ppr}
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1

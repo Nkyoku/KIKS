@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchQuadratureDecoder.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="fir_compiler_v5_0_sim_comps" />
+            <top_module name="fir_compiler_v5_0_sim_pkg" />
+            <top_module name="glbl" />
+            <top_module name="misc_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="quadraturedecoder_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_textio" />
+            <top_module name="testbenchquadraturedecoder" />
+            <top_module name="textio" />
+            <top_module name="ul_utils" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/testbenchquadraturedecoder/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchquadraturedecoder/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchquadraturedecoder/QDEC/enc_a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enc_a</obj_property>
+      <obj_property name="ObjectShortName">enc_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchquadraturedecoder/QDEC/enc_b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enc_b</obj_property>
+      <obj_property name="ObjectShortName">enc_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchquadraturedecoder/QDEC/enc_update" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enc_update</obj_property>
+      <obj_property name="ObjectShortName">enc_update</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchquadraturedecoder/QDEC/dec_latch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dec_latch</obj_property>
+      <obj_property name="ObjectShortName">dec_latch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchquadraturedecoder/QDEC/dec_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dec_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dec_out[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchquadraturedecoder/QDEC/dec_fltout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dec_fltout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dec_fltout[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchquadraturedecoder/QDEC/FIR/rdy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rdy</obj_property>
+      <obj_property name="ObjectShortName">rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="group12" type="group">
+      <obj_property name="label">Internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchquadraturedecoder/QDEC/enc_a_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">enc_a_in</obj_property>
+         <obj_property name="ObjectShortName">enc_a_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchquadraturedecoder/QDEC/enc_b_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">enc_b_in</obj_property>
+         <obj_property name="ObjectShortName">enc_b_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchquadraturedecoder/QDEC/enc_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">enc_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchquadraturedecoder/QDEC/enc_last_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">enc_last_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_last_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchquadraturedecoder/QDEC/enc_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">enc_cnt[11:0]</obj_property>
+         <obj_property name="ObjectShortName">enc_cnt[11:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

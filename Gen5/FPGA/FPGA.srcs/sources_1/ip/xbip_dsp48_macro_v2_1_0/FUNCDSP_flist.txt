@@ -1,0 +1,13 @@
+# Output products list for <FUNCDSP>
+FUNCDSP.asy
+FUNCDSP.gise
+FUNCDSP.ngc
+FUNCDSP.vhd
+FUNCDSP.vho
+FUNCDSP.xco
+FUNCDSP.xise
+FUNCDSP\doc\dsp48_macro_ds754.pdf
+FUNCDSP\doc\xbip_dsp48_macro_v2_1_readme.txt
+FUNCDSP\doc\xbip_dsp48_macro_v2_1_vinfo.html
+FUNCDSP_flist.txt
+FUNCDSP_xmdf.tcl

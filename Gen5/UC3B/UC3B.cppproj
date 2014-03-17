@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC32.CPP</ToolchainName>
+    <ProjectGuid>{b877e710-d8a1-4d13-a7fa-93e7d2600445}</ProjectGuid>
+    <avrdevice>AT32UC3B0512</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>UC3B</AssemblyName>
+    <Name>UC3B</Name>
+    <RootNamespace>UC3B</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <eraseonlaunchrule>2</eraseonlaunchrule>
+    <AsfVersion>3.5.0</AsfVersion>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <BootSegment>2</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.5.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.avrdragon</avrtool>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <com_atmel_avrdbg_tool_avrdragon>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.avrdragon</ToolType>
+      <ToolNumber>00A20000895B</ToolNumber>
+      <ToolName>AVR Dragon</ToolName>
+    </com_atmel_avrdbg_tool_avrdragon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <Avr32GccCpp>
+        <avr32gcc.common.outputfiles.hex>True</avr32gcc.common.outputfiles.hex>
+        <avr32gcc.common.outputfiles.lss>True</avr32gcc.common.outputfiles.lss>
+        <avr32gcc.common.outputfiles.eep>False</avr32gcc.common.outputfiles.eep>
+        <avr32gcc.common.outputfiles.srec>False</avr32gcc.common.outputfiles.srec>
+        <avr32gcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>_APP_</Value>
+          </ListValues>
+        </avr32gcc.compiler.symbols.DefSymbols>
+        <avr32gcc.compiler.optimization.level>Optimize most (-O3)</avr32gcc.compiler.optimization.level>
+        <avr32gcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avr32gcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avr32gcc.compiler.optimization.UseAssemblerForPseudoInstructions>True</avr32gcc.compiler.optimization.UseAssemblerForPseudoInstructions>
+        <avr32gcc.compiler.warnings.AllWarnings>True</avr32gcc.compiler.warnings.AllWarnings>
+        <avr32gcc.compiler.miscellaneous.OtherFlags>-mrelax -std=gnu99</avr32gcc.compiler.miscellaneous.OtherFlags>
+        <avr32gcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>_APP_</Value>
+          </ListValues>
+        </avr32gcccpp.compiler.symbols.DefSymbols>
+        <avr32gcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../source/FreeRTOS</Value>
+            <Value>../source/misc</Value>
+            <Value>../source/FatFs</Value>
+          </ListValues>
+        </avr32gcccpp.compiler.directories.IncludePaths>
+        <avr32gcccpp.compiler.optimization.level>Optimize most (-O3)</avr32gcccpp.compiler.optimization.level>
+        <avr32gcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avr32gcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avr32gcccpp.compiler.optimization.UseAssemblerForPseudoInstructions>True</avr32gcccpp.compiler.optimization.UseAssemblerForPseudoInstructions>
+        <avr32gcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</avr32gcccpp.compiler.optimization.DebugLevel>
+        <avr32gcccpp.compiler.warnings.AllWarnings>True</avr32gcccpp.compiler.warnings.AllWarnings>
+        <avr32gcccpp.compiler.miscellaneous.OtherFlags>-mrelax</avr32gcccpp.compiler.miscellaneous.OtherFlags>
+        <avr32gcccpp.linker.general.DoNotUseStandardStartFiles>True</avr32gcccpp.linker.general.DoNotUseStandardStartFiles>
+        <avr32gcccpp.linker.optimization.GarbageCollectUnusedSections>True</avr32gcccpp.linker.optimization.GarbageCollectUnusedSections>
+        <avr32gcccpp.linker.optimization.PutReadOnlyDataInWritableDataSection>True</avr32gcccpp.linker.optimization.PutReadOnlyDataInWritableDataSection>
+        <avr32gcccpp.linker.optimization.AllowDirectReferencesToDataSection>True</avr32gcccpp.linker.optimization.AllowDirectReferencesToDataSection>
+        <avr32gcccpp.linker.miscellaneous.LinkerFlags>-Wl,-e,_trampoline</avr32gcccpp.linker.miscellaneous.LinkerFlags>
+        <avr32gcccpp.assembler.general.AssemblerFlags>-mrelax</avr32gcccpp.assembler.general.AssemblerFlags>
+        <avr32gcccpp.preprocessingassembler.general.AssemblerFlags>-mrelax</avr32gcccpp.preprocessingassembler.general.AssemblerFlags>
+        <avr32gcccpp.preprocessingassembler.symbols.DefSymbols>
+          <ListValues>
+            <Value>_APP_</Value>
+          </ListValues>
+        </avr32gcccpp.preprocessingassembler.symbols.DefSymbols>
+      </Avr32GccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <Avr32GccCpp>
+        <avr32gcc.common.outputfiles.hex>True</avr32gcc.common.outputfiles.hex>
+        <avr32gcc.common.outputfiles.lss>True</avr32gcc.common.outputfiles.lss>
+        <avr32gcc.common.outputfiles.eep>False</avr32gcc.common.outputfiles.eep>
+        <avr32gcc.common.outputfiles.srec>False</avr32gcc.common.outputfiles.srec>
+        <avr32gcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>_APP_</Value>
+          </ListValues>
+        </avr32gcc.compiler.symbols.DefSymbols>
+        <avr32gcc.compiler.optimization.level>Optimize (-O1)</avr32gcc.compiler.optimization.level>
+        <avr32gcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avr32gcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avr32gcc.compiler.optimization.UseAssemblerForPseudoInstructions>True</avr32gcc.compiler.optimization.UseAssemblerForPseudoInstructions>
+        <avr32gcc.compiler.optimization.DebugLevel>Maximum (-g3)</avr32gcc.compiler.optimization.DebugLevel>
+        <avr32gcc.compiler.warnings.AllWarnings>True</avr32gcc.compiler.warnings.AllWarnings>
+        <avr32gcc.compiler.miscellaneous.OtherFlags>-mrelax -std=gnu99</avr32gcc.compiler.miscellaneous.OtherFlags>
+        <avr32gcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>_APP_</Value>
+          </ListValues>
+        </avr32gcccpp.compiler.symbols.DefSymbols>
+        <avr32gcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../source/FreeRTOS</Value>
+            <Value>../source/misc</Value>
+            <Value>../source/FatFs</Value>
+          </ListValues>
+        </avr32gcccpp.compiler.directories.IncludePaths>
+        <avr32gcccpp.compiler.optimization.level>Optimize (-O1)</avr32gcccpp.compiler.optimization.level>
+        <avr32gcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avr32gcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avr32gcccpp.compiler.optimization.UseAssemblerForPseudoInstructions>True</avr32gcccpp.compiler.optimization.UseAssemblerForPseudoInstructions>
+        <avr32gcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</avr32gcccpp.compiler.optimization.DebugLevel>
+        <avr32gcccpp.compiler.warnings.AllWarnings>True</avr32gcccpp.compiler.warnings.AllWarnings>
+        <avr32gcccpp.compiler.miscellaneous.OtherFlags>-mrelax</avr32gcccpp.compiler.miscellaneous.OtherFlags>
+        <avr32gcccpp.linker.general.DoNotUseStandardStartFiles>True</avr32gcccpp.linker.general.DoNotUseStandardStartFiles>
+        <avr32gcccpp.linker.optimization.GarbageCollectUnusedSections>True</avr32gcccpp.linker.optimization.GarbageCollectUnusedSections>
+        <avr32gcccpp.linker.optimization.PutReadOnlyDataInWritableDataSection>True</avr32gcccpp.linker.optimization.PutReadOnlyDataInWritableDataSection>
+        <avr32gcccpp.linker.optimization.AllowDirectReferencesToDataSection>True</avr32gcccpp.linker.optimization.AllowDirectReferencesToDataSection>
+        <avr32gcccpp.linker.miscellaneous.LinkerFlags>-Wl,-e,_trampoline</avr32gcccpp.linker.miscellaneous.LinkerFlags>
+        <avr32gcccpp.assembler.general.AssemblerFlags>-mrelax</avr32gcccpp.assembler.general.AssemblerFlags>
+        <avr32gcccpp.assembler.debugging.DebugLevel>Default (-g)</avr32gcccpp.assembler.debugging.DebugLevel>
+        <avr32gcccpp.preprocessingassembler.general.AssemblerFlags>-mrelax</avr32gcccpp.preprocessingassembler.general.AssemblerFlags>
+        <avr32gcccpp.preprocessingassembler.symbols.DefSymbols>
+          <ListValues>
+            <Value>_APP_</Value>
+          </ListValues>
+        </avr32gcccpp.preprocessingassembler.symbols.DefSymbols>
+        <avr32gcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</avr32gcccpp.preprocessingassembler.debugging.DebugLevel>
+      </Avr32GccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DebugDFU' ">
+    <ToolchainSettings>
+      <Avr32GccCpp>
+        <avr32gcc.common.outputfiles.hex>True</avr32gcc.common.outputfiles.hex>
+        <avr32gcc.common.outputfiles.lss>True</avr32gcc.common.outputfiles.lss>
+        <avr32gcc.common.outputfiles.eep>False</avr32gcc.common.outputfiles.eep>
+        <avr32gcc.common.outputfiles.srec>False</avr32gcc.common.outputfiles.srec>
+        <avr32gcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>_DFU_</Value>
+          </ListValues>
+        </avr32gcc.compiler.symbols.DefSymbols>
+        <avr32gcc.compiler.optimization.level>Optimize (-O1)</avr32gcc.compiler.optimization.level>
+        <avr32gcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avr32gcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avr32gcc.compiler.optimization.UseAssemblerForPseudoInstructions>True</avr32gcc.compiler.optimization.UseAssemblerForPseudoInstructions>
+        <avr32gcc.compiler.optimization.DebugLevel>Maximum (-g3)</avr32gcc.compiler.optimization.DebugLevel>
+        <avr32gcc.compiler.warnings.AllWarnings>True</avr32gcc.compiler.warnings.AllWarnings>
+        <avr32gcc.compiler.miscellaneous.OtherFlags>-mrelax -std=gnu99</avr32gcc.compiler.miscellaneous.OtherFlags>
+        <avr32gcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>_DFU_</Value>
+          </ListValues>
+        </avr32gcccpp.compiler.symbols.DefSymbols>
+        <avr32gcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../source/FreeRTOS</Value>
+            <Value>../source/misc</Value>
+            <Value>../source/FatFs</Value>
+          </ListValues>
+        </avr32gcccpp.compiler.directories.IncludePaths>
+        <avr32gcccpp.compiler.optimization.level>Optimize (-O1)</avr32gcccpp.compiler.optimization.level>
+        <avr32gcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avr32gcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avr32gcccpp.compiler.optimization.UseAssemblerForPseudoInstructions>True</avr32gcccpp.compiler.optimization.UseAssemblerForPseudoInstructions>
+        <avr32gcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</avr32gcccpp.compiler.optimization.DebugLevel>
+        <avr32gcccpp.compiler.warnings.AllWarnings>True</avr32gcccpp.compiler.warnings.AllWarnings>
+        <avr32gcccpp.compiler.miscellaneous.OtherFlags>-mrelax</avr32gcccpp.compiler.miscellaneous.OtherFlags>
+        <avr32gcccpp.linker.general.DoNotUseStandardStartFiles>True</avr32gcccpp.linker.general.DoNotUseStandardStartFiles>
+        <avr32gcccpp.linker.optimization.GarbageCollectUnusedSections>True</avr32gcccpp.linker.optimization.GarbageCollectUnusedSections>
+        <avr32gcccpp.linker.optimization.PutReadOnlyDataInWritableDataSection>True</avr32gcccpp.linker.optimization.PutReadOnlyDataInWritableDataSection>
+        <avr32gcccpp.linker.optimization.AllowDirectReferencesToDataSection>True</avr32gcccpp.linker.optimization.AllowDirectReferencesToDataSection>
+        <avr32gcccpp.assembler.general.AssemblerFlags>-mrelax</avr32gcccpp.assembler.general.AssemblerFlags>
+        <avr32gcccpp.assembler.debugging.DebugLevel>Default (-g)</avr32gcccpp.assembler.debugging.DebugLevel>
+        <avr32gcccpp.preprocessingassembler.general.AssemblerFlags>-mrelax</avr32gcccpp.preprocessingassembler.general.AssemblerFlags>
+        <avr32gcccpp.preprocessingassembler.symbols.DefSymbols>
+          <ListValues>
+            <Value>_DFU_</Value>
+          </ListValues>
+        </avr32gcccpp.preprocessingassembler.symbols.DefSymbols>
+        <avr32gcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</avr32gcccpp.preprocessingassembler.debugging.DebugLevel>
+      </Avr32GccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Source" />
+    <Folder Include="Source\FreeRTOS" />
+    <Folder Include="Source\driver" />
+    <Folder Include="Source\misc" />
+    <Folder Include="Source\HAL" />
+    <Folder Include="Source\FatFs" />
+    <Folder Include="Source\asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Source\asm\int_evba.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\controller.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\controller.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\define.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\adc.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\adc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\clock.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\debugIF.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\debugIF.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\kicker.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\kicker.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\mcuflash.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\mcuflash.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\spartan6.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\spartan6.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\gpio.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\gpio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\int.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\int.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\boot.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\boot.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\mx25l6445e.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\mx25l6445e.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\spi.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\spi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\time.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\time.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\usb.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\usb.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\usb_desc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\driver\usb_struct.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FatFs\diskio.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FatFs\diskio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FatFs\ff.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FatFs\ff.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FatFs\ffconf.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FatFs\integer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FatFs\syscall.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\FreeRTOS.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\FreeRTOSConfig.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\global.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\HAL\BTLUSB.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\HAL\BTLUSB.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\HAL\Pipe.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\HAL\Pipe.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\HAL\TTY.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\HAL\TTY.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\kicker_task.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\kicker_task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\logger.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\logger.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\main_task.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\main_task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\message_enum.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\message_struct.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\misc\xprintf.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\misc\xprintf.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\safety_task.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\safety_task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\shell_task.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\shell_task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\smem.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\usb_task.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\usb_task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\semphr.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\misc\misc.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\misc\misc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\heap_2.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\list.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\list.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\mpu_wrappers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\port.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\portable.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\portmacro.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\projdefs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\queue.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\queue.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\StackMacros.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\tasks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\FreeRTOS\timers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\asm\Startup.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\asm\Trampoline.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\asm\Trampoline.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Source\usb_task_struct.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

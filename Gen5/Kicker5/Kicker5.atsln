@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Kicker5", "Kicker5.cppproj", "{5D4AE1D1-9A70-4F51-999A-E2B51EB8160A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		DebugDFU|AVR = DebugDFU|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D4AE1D1-9A70-4F51-999A-E2B51EB8160A}.Debug|AVR.ActiveCfg = Debug|AVR
+		{5D4AE1D1-9A70-4F51-999A-E2B51EB8160A}.Debug|AVR.Build.0 = Debug|AVR
+		{5D4AE1D1-9A70-4F51-999A-E2B51EB8160A}.DebugDFU|AVR.ActiveCfg = DebugDFU|AVR
+		{5D4AE1D1-9A70-4F51-999A-E2B51EB8160A}.DebugDFU|AVR.Build.0 = DebugDFU|AVR
+		{5D4AE1D1-9A70-4F51-999A-E2B51EB8160A}.Release|AVR.ActiveCfg = Release|AVR
+		{5D4AE1D1-9A70-4F51-999A-E2B51EB8160A}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

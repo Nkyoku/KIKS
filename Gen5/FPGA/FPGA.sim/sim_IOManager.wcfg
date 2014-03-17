@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchIOM.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bustest_pkg" />
+            <top_module name="iomanager_pkg" />
+            <top_module name="misc_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchiom" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/testbenchiom/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchiom/clk_per" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_per</obj_property>
+      <obj_property name="ObjectShortName">clk_per</obj_property>
+   </wvobject>
+   <wvobject fp_name="group12" type="group">
+      <obj_property name="label">IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchiom/IOM/pwr_5v" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pwr_5v</obj_property>
+         <obj_property name="ObjectShortName">pwr_5v</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot12_en_sensors" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mot12_en_sensors</obj_property>
+         <obj_property name="ObjectShortName">mot12_en_sensors</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot345_en_sensors" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mot345_en_sensors</obj_property>
+         <obj_property name="ObjectShortName">mot345_en_sensors</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/led_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">led_clk</obj_property>
+         <obj_property name="ObjectShortName">led_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/led_do" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">led_do</obj_property>
+         <obj_property name="ObjectShortName">led_do</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group18" type="group">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchiom/IOM/mem_wr_pcr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr_pcr</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_pcr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mem_wr_ind" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr_ind</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_ind</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mem_wr_bz" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr_bz</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_bz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mem_rd_pcr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_rd_pcr</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_pcr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mem_rd_mot12" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_rd_mot12</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_mot12</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mem_rd_mot345" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_rd_mot345</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_mot345</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mem_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mem_data_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mem_data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_data_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_out[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group33" type="group">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchiom/IOM/reg_pwr5v" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_pwr5v</obj_property>
+         <obj_property name="ObjectShortName">reg_pwr5v</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_pwrm12" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_pwrm12</obj_property>
+         <obj_property name="ObjectShortName">reg_pwrm12</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_pwrm345" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_pwrm345</obj_property>
+         <obj_property name="ObjectShortName">reg_pwrm345</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_led" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_led[6:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_led[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_bzen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_bzen</obj_property>
+         <obj_property name="ObjectShortName">reg_bzen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_bzfreq" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_bzfreq[14:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_bzfreq[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_pwred12" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_pwred12</obj_property>
+         <obj_property name="ObjectShortName">reg_pwred12</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_pwred345" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_pwred345</obj_property>
+         <obj_property name="ObjectShortName">reg_pwred345</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_mot1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_mot1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_mot1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_mot2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_mot2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_mot2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_mot3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_mot3[4:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_mot3[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_mot4" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_mot4[4:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_mot4[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/reg_mot5" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_mot5[2:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_mot5[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group47" type="group">
+      <obj_property name="label">Indicator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchiom/IOM/bz_phase" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bz_phase[23:0]</obj_property>
+         <obj_property name="ObjectShortName">bz_phase[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/bz_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">bz_out</obj_property>
+         <obj_property name="ObjectShortName">bz_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/ind_en" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">ind_en</obj_property>
+         <obj_property name="ObjectShortName">ind_en</obj_property>
+         <obj_property name="label">ind_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/ind_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ind_cnt[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ind_cnt[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/ind_sr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ind_sr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ind_sr[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group53" type="group">
+      <obj_property name="label">SR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchiom/mot1_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mot1_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mot1_data[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mot_valid</obj_property>
+         <obj_property name="ObjectShortName">mot_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot12_nlatch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mot12_nlatch</obj_property>
+         <obj_property name="ObjectShortName">mot12_nlatch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot12_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mot12_clk</obj_property>
+         <obj_property name="ObjectShortName">mot12_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot12_ndo" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mot12_ndo</obj_property>
+         <obj_property name="ObjectShortName">mot12_ndo</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot345_nlatch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mot345_nlatch</obj_property>
+         <obj_property name="ObjectShortName">mot345_nlatch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot345_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mot345_clk</obj_property>
+         <obj_property name="ObjectShortName">mot345_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot345_ndo" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mot345_ndo</obj_property>
+         <obj_property name="ObjectShortName">mot345_ndo</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mot_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mot_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot_sr1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mot_sr1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mot_sr1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchiom/IOM/mot_sr2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mot_sr2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mot_sr2[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

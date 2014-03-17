@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sat Mar 15 23:19:28 2014">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="effd2ee028e14623b6fe6c628b91f08a" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="PlanAhead Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="ISE Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSrc" value="70" type="JavaHandler"/>
+<property name="AutoFitSelection" value="2" type="JavaHandler"/>
+<property name="CloseProject" value="6" type="JavaHandler"/>
+<property name="CoreView" value="21" type="JavaHandler"/>
+<property name="CustomizeCore" value="30" type="JavaHandler"/>
+<property name="EditDelete" value="54" type="JavaHandler"/>
+<property name="EditFind" value="1" type="JavaHandler"/>
+<property name="EditProperties" value="2" type="JavaHandler"/>
+<property name="EditSimulationSets" value="4" type="JavaHandler"/>
+<property name="Generate Target" value="26" type="JavaHandler"/>
+<property name="LaunchSimulatorWizard" value="156" type="JavaHandler"/>
+<property name="LaunchXPA" value="4" type="JavaHandler"/>
+<property name="MarkSelection" value="2" type="JavaHandler"/>
+<property name="MoveSources" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettings" value="31" type="JavaHandler"/>
+<property name="RecustomizeCore" value="49" type="JavaHandler"/>
+<property name="ReportTiming" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="175" type="JavaHandler"/>
+<property name="RunImplementation" value="297" type="JavaHandler"/>
+<property name="RunSchematic" value="84" type="JavaHandler"/>
+<property name="RunSynthesis" value="473" type="JavaHandler"/>
+<property name="ShowCompatibleFamilies" value="1" type="JavaHandler"/>
+<property name="ShowIONets" value="6" type="JavaHandler"/>
+<property name="ShowSource" value="1" type="JavaHandler"/>
+<property name="ShowView" value="233" type="JavaHandler"/>
+<property name="SimLauncher" value="146" type="JavaHandler"/>
+<property name="ToggleSelectAreaMode" value="1" type="JavaHandler"/>
+<property name="ToggleShowInstanceConnections" value="6" type="JavaHandler"/>
+<property name="ToolsOptions" value="1" type="JavaHandler"/>
+<property name="UnhighlightSelection" value="2" type="JavaHandler"/>
+<property name="UnmarkSelection" value="1" type="JavaHandler"/>
+<property name="UpdateSourceFiles" value="8" type="JavaHandler"/>
+<property name="ViewLayoutCmd" value="3" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="102" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="44" type="JavaHandler"/>
+<property name="ZoomFit" value="1" type="JavaHandler"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="81" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="77" type="TclMode"/>
+<property name="ISEMode" value="0" type="ISEMode"/>
+</item>
+</section>
+</application>
+</document>

@@ -1,0 +1,9 @@
+#ifndef _TRAMPOLINE_H_
+#define _TRAMPOLINE_H_
+
+#include <avr32/io.h>
+
+#define PROGRAM_START_OFFSET	0x2000
+#define PROGRAM_START_ADDRESS	(AVR32_FLASH_ADDRESS + PROGRAM_START_OFFSET)
+
+#endif

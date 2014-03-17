@@ -1,0 +1,13 @@
+# Output products list for <MUL32X32>
+MUL32X32.asy
+MUL32X32.gise
+MUL32X32.ngc
+MUL32X32.vhd
+MUL32X32.vho
+MUL32X32.xco
+MUL32X32.xise
+MUL32X32\doc\mult_gen_ds255.pdf
+MUL32X32\doc\mult_gen_v11_2_readme.txt
+MUL32X32\doc\mult_gen_v11_2_vinfo.html
+MUL32X32_flist.txt
+MUL32X32_xmdf.tcl

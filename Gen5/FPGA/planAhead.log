@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Sat Mar 15 23:07:13 2014
+# Process ID: 3740
+# Log file: D:/work/KIKS/Gen5/FPGA/planAhead.log
+# Journal file: D:/work/KIKS/Gen5/FPGA\planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/app/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/app/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/app/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project {D:\work\KIKS\Gen5\FPGA\FPGA.ppr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-816] Loaded Xilinx IP repository 'C:/app/Xilinx/14.6/ISE_DS/ISE/'
+open_project: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 447.695 ; gain = 91.082
+update_compile_order -fileset sim_1
+reset_run synth_1
+reset_run: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 504.664 ; gain = 17.988
+launch_runs synth_1
+[Sat Mar 15 23:08:18 2014] Launched synth_1...
+Run output will be captured here: D:/work/KIKS/Gen5/FPGA/FPGA.runs/synth_1/runme.log
+launch_runs: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 511.020 ; gain = 6.355
+reset_run synth_1
+reset_run: Time (s): elapsed = 00:00:16 . Memory (MB): peak = 524.043 ; gain = 5.387
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Sat Mar 15 23:19:30 2014...
+INFO: [Common 17-83] Releasing license: PlanAhead

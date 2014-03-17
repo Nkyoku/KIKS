@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchSPISLAVE.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="dmem_pkg" />
+            <top_module name="misc_pkg" />
+            <top_module name="spisend_pkg" />
+            <top_module name="spislave_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchspislave" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/testbenchspislave/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchspislave/clk_per" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_per</obj_property>
+      <obj_property name="ObjectShortName">clk_per</obj_property>
+   </wvobject>
+   <wvobject fp_name="group13" type="group">
+      <obj_property name="label">SPI</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_ncs" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_ncs</obj_property>
+         <obj_property name="ObjectShortName">spi_ncs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_ncs_ff2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_ncs_ff2</obj_property>
+         <obj_property name="ObjectShortName">spi_ncs_ff2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_sclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_sclk</obj_property>
+         <obj_property name="ObjectShortName">spi_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_sclk_int" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_sclk_int</obj_property>
+         <obj_property name="ObjectShortName">spi_sclk_int</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_mosi" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_mosi</obj_property>
+         <obj_property name="ObjectShortName">spi_mosi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_miso" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_miso</obj_property>
+         <obj_property name="ObjectShortName">spi_miso</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group14" type="group">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchspislave/MEM/mem_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_en</obj_property>
+         <obj_property name="ObjectShortName">mem_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/MEM/mem_select" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_select</obj_property>
+         <obj_property name="ObjectShortName">mem_select</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/MEM/mem_wr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr</obj_property>
+         <obj_property name="ObjectShortName">mem_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/MEM/mem_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/MEM/mem_data_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/MEM/mem_data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_data_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_out[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/mem_reading" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_reading</obj_property>
+         <obj_property name="ObjectShortName">mem_reading</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/mem_fetch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_fetch</obj_property>
+         <obj_property name="ObjectShortName">mem_fetch</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group15" type="group">
+      <obj_property name="label">Internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_counter" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">spi_counter[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_shift" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_shift[15:0]</obj_property>
+         <obj_property name="ObjectShortName">spi_shift[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_read_buf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_read_buf[15:0]</obj_property>
+         <obj_property name="ObjectShortName">spi_read_buf[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_write_buf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_write_buf[15:0]</obj_property>
+         <obj_property name="ObjectShortName">spi_write_buf[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_write_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_write_en</obj_property>
+         <obj_property name="ObjectShortName">spi_write_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_inc_wait" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_inc_wait</obj_property>
+         <obj_property name="ObjectShortName">spi_inc_wait</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/spi_address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_address[12:0]</obj_property>
+         <obj_property name="ObjectShortName">spi_address[12:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group16" type="group">
+      <obj_property name="label">Handshake</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchspislave/SPISLV/req_write" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_write</obj_property>
+         <obj_property name="ObjectShortName">req_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/req_write_delay" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_write_delay</obj_property>
+         <obj_property name="ObjectShortName">req_write_delay</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/ack_write" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_write</obj_property>
+         <obj_property name="ObjectShortName">ack_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/req_read" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_read</obj_property>
+         <obj_property name="ObjectShortName">req_read</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/req_read_delay" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_read_delay</obj_property>
+         <obj_property name="ObjectShortName">req_read_delay</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchspislave/SPISLV/ack_read" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_read</obj_property>
+         <obj_property name="ObjectShortName">ack_read</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

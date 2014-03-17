@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchGlobal.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="spisend_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchglobal" />
+            <top_module name="uarttest_pkg" />
+            <top_module name="vl_types" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/testbenchglobal/clk_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/spi_ncs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">spi_ncs</obj_property>
+      <obj_property name="ObjectShortName">spi_ncs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/spi_sclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">spi_sclk</obj_property>
+      <obj_property name="ObjectShortName">spi_sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/spi_mosi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">spi_mosi</obj_property>
+      <obj_property name="ObjectShortName">spi_mosi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/spi_miso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">spi_miso</obj_property>
+      <obj_property name="ObjectShortName">spi_miso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/Main_inst/nINIT" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nINIT</obj_property>
+      <obj_property name="ObjectShortName">nINIT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/uart_tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_tx</obj_property>
+      <obj_property name="ObjectShortName">uart_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchglobal/arbit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">arbit</obj_property>
+      <obj_property name="ObjectShortName">arbit</obj_property>
+   </wvobject>
+</wave_config>

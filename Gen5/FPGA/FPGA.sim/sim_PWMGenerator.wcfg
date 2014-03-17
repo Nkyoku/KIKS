@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchPWMGenerator.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="misc_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="pwmgenerator_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="synchronizer_pkg" />
+            <top_module name="testbenchpwmgenerator" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/testbenchpwmgenerator/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpwmgenerator/clk_pwm" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_pwm</obj_property>
+      <obj_property name="ObjectShortName">clk_pwm</obj_property>
+   </wvobject>
+   <wvobject fp_name="group8" type="group">
+      <obj_property name="label">MotorDriver</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/pwm_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pwm_out[2:0]</obj_property>
+         <obj_property name="ObjectShortName">pwm_out[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/nreset_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">nreset_out[2:0]</obj_property>
+         <obj_property name="ObjectShortName">nreset_out[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/nfault_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nfault_in</obj_property>
+         <obj_property name="ObjectShortName">nfault_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/notw_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">notw_in</obj_property>
+         <obj_property name="ObjectShortName">notw_in</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group24" type="group">
+      <obj_property name="label">PWM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/pwm_enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pwm_enable</obj_property>
+         <obj_property name="ObjectShortName">pwm_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/pwm_ch_enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pwm_ch_enable</obj_property>
+         <obj_property name="ObjectShortName">pwm_ch_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/pwm_ch_on" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pwm_ch_on</obj_property>
+         <obj_property name="ObjectShortName">pwm_ch_on</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/phase_en" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">phase_en[2:0]</obj_property>
+         <obj_property name="ObjectShortName">phase_en[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/phase_pol" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">phase_pol[2:0]</obj_property>
+         <obj_property name="ObjectShortName">phase_pol[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/pwm_counter" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pwm_counter[12:0]</obj_property>
+         <obj_property name="ObjectShortName">pwm_counter[12:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group17" type="group">
+      <obj_property name="label">Handshake</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/req_latch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">req_latch</obj_property>
+         <obj_property name="ObjectShortName">req_latch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/ack_latch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_latch</obj_property>
+         <obj_property name="ObjectShortName">ack_latch</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group31" type="group">
+      <obj_property name="label">Latch</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/latched_duty" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">latched_duty[12:0]</obj_property>
+         <obj_property name="ObjectShortName">latched_duty[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/latched_en" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">latched_en[2:0]</obj_property>
+         <obj_property name="ObjectShortName">latched_en[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/latched_pol" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">latched_pol[2:0]</obj_property>
+         <obj_property name="ObjectShortName">latched_pol[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group54" type="group">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/reg_duty" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_duty[12:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_duty[12:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group76" type="group">
+      <obj_property name="label">OT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/reg_ot" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_ot</obj_property>
+         <obj_property name="ObjectShortName">reg_ot</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchpwmgenerator/PWMGEN/reg_oc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_oc</obj_property>
+         <obj_property name="ObjectShortName">reg_oc</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

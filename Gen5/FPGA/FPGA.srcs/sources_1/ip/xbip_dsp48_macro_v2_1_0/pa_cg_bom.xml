@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+  <IPInstance name="FUNCDSP">
+    <FileSets>
+      <FileSet generator="apply_current_project_options_generator">
+        <File name="./apply_current_project_options_generator.xlog" type="ignore" timestamp="Wed Oct 30 14:14:29 GMT 2013" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="model_parameter_resolution_generator">
+        <File name="./model_parameter_resolution_generator.xlog" type="ignore" timestamp="Wed Oct 30 14:14:29 GMT 2013" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="ip_xco_generator">
+        <File name="./FUNCDSP.xco" type="xco" timestamp="Wed Oct 30 14:13:52 GMT 2013" checksum="0x432A0098"></File>
+      </FileSet>
+      <FileSet generator="associated_files_generator">
+        <File name="./associated_files_generator.xlog" type="ignore" timestamp="Wed Oct 30 14:14:29 GMT 2013" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="ngc_netlist_generator">
+        <File name="./FUNCDSP.ngc" type="ngc" timestamp="Wed Oct 30 14:14:23 GMT 2013" checksum="0x02735751"></File>
+      </FileSet>
+      <FileSet generator="obfuscate_netlist_generator">
+        <File name="./FUNCDSP.ngc" type="ngc" timestamp="Wed Oct 30 14:14:23 GMT 2013" checksum="0x526AE635"></File>
+      </FileSet>
+      <FileSet generator="padded_implementation_netlist_generator">
+        <File name="./padded_implementation_netlist_generator.xlog" type="ignore" timestamp="Wed Oct 30 14:14:29 GMT 2013" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="instantiation_template_generator">
+        <File name="./FUNCDSP.vho" type="vho" timestamp="Wed Oct 30 14:14:24 GMT 2013" checksum="0x3799CBF9"></File>
+      </FileSet>
+      <FileSet generator="rtl_simulation_model_generator">
+        <File name="./FUNCDSP.vhd" type="vhdl" timestamp="Wed Oct 30 14:14:24 GMT 2013" checksum="0x74AFB64F"></File>
+      </FileSet>
+      <FileSet generator="synthesis_instantiation_wrapper_generator">
+        <File name="./synthesis_instantiation_wrapper_generator.xlog" type="ignore" timestamp="Wed Oct 30 14:14:29 GMT 2013" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="all_documents_generator">
+        <File name="./FUNCDSP/doc/dsp48_macro_ds754.pdf" type="ignore" timestamp="Wed Oct 30 14:14:24 GMT 2013" checksum="0xBF426A61"></File>
+        <File name="./FUNCDSP/doc/xbip_dsp48_macro_v2_1_readme.txt" type="ignore" timestamp="Wed Oct 30 14:14:24 GMT 2013" checksum="0xA5DC6749"></File>
+        <File name="./FUNCDSP/doc/xbip_dsp48_macro_v2_1_vinfo.html" type="ignore" timestamp="Wed Oct 30 14:14:24 GMT 2013" checksum="0xB3ED0A99"></File>
+      </FileSet>
+      <FileSet generator="asy_generator">
+        <File name="./FUNCDSP.asy" type="asy" timestamp="Wed Oct 30 14:14:25 GMT 2013" checksum="0xCAD2A0F9"></File>
+      </FileSet>
+      <FileSet generator="xmdf_generator">
+        <File name="./FUNCDSP_xmdf.tcl" type="tclXmdf" timestamp="Wed Oct 30 14:14:26 GMT 2013" checksum="0x72FA8975"></File>
+      </FileSet>
+      <FileSet generator="ise_generator">
+        <File name="./FUNCDSP.gise" type="ignore" timestamp="Wed Oct 30 14:14:29 GMT 2013" checksum="0xB5CBF499"></File>
+        <File name="./FUNCDSP.xise" type="ignore" timestamp="Wed Oct 30 14:14:29 GMT 2013" checksum="0xB81105C1"></File>
+      </FileSet>
+      <FileSet generator="deliver_readme_generator">
+        <File name="./deliver_readme_generator.xlog" type="ignore" timestamp="Wed Oct 30 14:14:29 GMT 2013" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="flist_generator">
+        <File name="./FUNCDSP_flist.txt" type="ignore" timestamp="Wed Oct 30 14:14:29 GMT 2013" checksum="0x14D7BB3F"></File>
+      </FileSet>
+    </FileSets>
+  </IPInstance>
+</BillOfMaterials>

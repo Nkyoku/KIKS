@@ -1,0 +1,38 @@
+﻿・PLL
+	[0] -> CPUクロック (driver/clock.h)
+
+・DMA
+	[0] -> ホスト送信 (driver/uart.cpp)
+	[1] -> 
+	[2] -> ソレノイド電流測定 (charge.cpp)
+	[3] -> 
+
+・EVENT
+	[0] -> ソレノイド電流測定 (charge.cpp)
+	[1] -> 
+	[2] -> 
+	[3] -> 
+	[4] -> 
+	[5] -> 
+	[6] -> 
+	[7] -> 
+	
+・USART
+	[C0] -> 
+	[C1] -> 
+	[D0] -> デバッグ送受信 未使用
+	[D1] -> 
+	[E0] -> ホスト送受信 (driver/uart.cpp)
+	
+・TIMER
+	[C0] -> 
+	[C1] -> キックタイマー (charge.cpp)
+	[D0] -> システムチック (main.cpp)
+	[D1] -> 充電タイマー (charge.cpp)
+	[E0] -> ソレノイド電流測定 (charge.cpp)
+	
+	
+	
+	
+	
+	

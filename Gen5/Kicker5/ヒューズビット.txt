@@ -1,0 +1,6 @@
+FUSEBYTE0 : 0xFF (Default)
+FUSEBYTE1 : 0x00 (Default)
+FUSEBYTE2 : 0xBE
+FUSEBYTE4 : 0xFE (Default)
+FUSEBYTE5 : 0xEA
+

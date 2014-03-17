@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchNPX.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_dsp48_addsub_pkg_v2_0" />
+            <top_module name="bip_dsp48_macro_pkg_v2_1" />
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="bustest_pkg" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="functiontable_pkg" />
+            <top_module name="glbl" />
+            <top_module name="math_real" />
+            <top_module name="misc_pkg" />
+            <top_module name="mult_gen_pkg_v11_2" />
+            <top_module name="numeric_std" />
+            <top_module name="openmsp430_npx_pkg" />
+            <top_module name="serial_divide_uu_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbenchnpx" />
+            <top_module name="textio" />
+            <top_module name="xbip_addsub_v2_0_comp" />
+            <top_module name="xbip_dsp48_addsub_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/testbenchnpx/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchnpx/omsp_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">omsp_reset</obj_property>
+      <obj_property name="ObjectShortName">omsp_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="group10" type="group">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchnpx/mem_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_en</obj_property>
+         <obj_property name="ObjectShortName">mem_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/mem_wr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wr</obj_property>
+         <obj_property name="ObjectShortName">mem_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/mem_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/mem_din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_din[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_din[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/mem_dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_dout[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_dout[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group11" type="group">
+      <obj_property name="label">Multiplier</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_first" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_first</obj_property>
+         <obj_property name="ObjectShortName">mac_first</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_second" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_second</obj_property>
+         <obj_property name="ObjectShortName">mac_second</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_third" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_third</obj_property>
+         <obj_property name="ObjectShortName">mac_third</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_forth" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_forth</obj_property>
+         <obj_property name="ObjectShortName">mac_forth</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_acc_enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_acc_enable</obj_property>
+         <obj_property name="ObjectShortName">mac_acc_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_direction" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_direction[2:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_direction[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_ce" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_ce</obj_property>
+         <obj_property name="ObjectShortName">mac_ce</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_multiplicandl" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_multiplicandl[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_multiplicandl[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_multiplicandh" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_multiplicandh[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_multiplicandh[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_multiplierl" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_multiplierl[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_multiplierl[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_multiplierh" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_multiplierh[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_multiplierh[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_temporary_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_temporary_out[63:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_temporary_out[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_product" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_product[63:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_product[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_accumulatorll" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_accumulatorll[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_accumulatorll[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_accumulatorul" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_accumulatorul[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_accumulatorul[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_accumulatorlh" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_accumulatorlh[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_accumulatorlh[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/mac_accumulator_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_accumulator_out[47:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_accumulator_out[47:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group29" type="group">
+      <obj_property name="label">Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchnpx/NPX/divuu_start" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">divuu_start</obj_property>
+         <obj_property name="ObjectShortName">divuu_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/divuu_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">divuu_done</obj_property>
+         <obj_property name="ObjectShortName">divuu_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/divuu_dividendl" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">divuu_dividendl[15:0]</obj_property>
+         <obj_property name="ObjectShortName">divuu_dividendl[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/divuu_dividendh" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">divuu_dividendh[14:0]</obj_property>
+         <obj_property name="ObjectShortName">divuu_dividendh[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/divuu_divisorl" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">divuu_divisorl[15:0]</obj_property>
+         <obj_property name="ObjectShortName">divuu_divisorl[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/divuu_divisorh" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">divuu_divisorh[14:0]</obj_property>
+         <obj_property name="ObjectShortName">divuu_divisorh[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/divuu_quotient" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">divuu_quotient[30:0]</obj_property>
+         <obj_property name="ObjectShortName">divuu_quotient[30:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group47" type="group">
+      <obj_property name="label">Function</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchnpx/NPX/func_start" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">func_start</obj_property>
+         <obj_property name="ObjectShortName">func_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/func_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">func_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">func_sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/func_input0l" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">func_input0l[15:0]</obj_property>
+         <obj_property name="ObjectShortName">func_input0l[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/func_input0h" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">func_input0h[15:0]</obj_property>
+         <obj_property name="ObjectShortName">func_input0h[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/func_result0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">func_result0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">func_result0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/func_temp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">func_temp[15:0]</obj_property>
+         <obj_property name="ObjectShortName">func_temp[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group63" type="group">
+      <obj_property name="label">Interpolation</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/data_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">data_sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/data_ptr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data_ptr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">data_ptr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/lerp_ce" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">lerp_ce</obj_property>
+         <obj_property name="ObjectShortName">lerp_ce</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/lerp_addr0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">lerp_addr0[9:0]</obj_property>
+         <obj_property name="ObjectShortName">lerp_addr0[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/lerp_addr1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">lerp_addr1[9:0]</obj_property>
+         <obj_property name="ObjectShortName">lerp_addr1[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/lerp_data0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">lerp_data0[15:0]</obj_property>
+         <obj_property name="ObjectShortName">lerp_data0[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/lerp_data1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">lerp_data1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">lerp_data1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/lerp_interpol" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">lerp_interpol[7:0]</obj_property>
+         <obj_property name="ObjectShortName">lerp_interpol[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/lerp_offset" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">lerp_offset[15:0]</obj_property>
+         <obj_property name="ObjectShortName">lerp_offset[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchnpx/NPX/FUNC/lerp_temp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">lerp_temp[25:0]</obj_property>
+         <obj_property name="ObjectShortName">lerp_temp[25:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBenchSMPX.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_dsp48_addsub_pkg_v2_0" />
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="bustest_pkg" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="glbl" />
+            <top_module name="misc_pkg" />
+            <top_module name="mult_gen_pkg_v11_2" />
+            <top_module name="numeric_std" />
+            <top_module name="openmsp430_pkg" />
+            <top_module name="openmsp430_smpx_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="synchronizer_pkg" />
+            <top_module name="testbenchsmpx" />
+            <top_module name="textio" />
+            <top_module name="xbip_addsub_v2_0_comp" />
+            <top_module name="xbip_dsp48_addsub_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/testbenchsmpx/clk_sys1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys1</obj_property>
+      <obj_property name="ObjectShortName">clk_sys1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchsmpx/clk_sys2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys2</obj_property>
+      <obj_property name="ObjectShortName">clk_sys2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchsmpx/omsp_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">omsp_reset</obj_property>
+      <obj_property name="ObjectShortName">omsp_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="group17" type="group">
+      <obj_property name="label">XBus</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_en</obj_property>
+         <obj_property name="ObjectShortName">xbus_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_wr[1:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_wr[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_data_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_data_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_data_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_data_out[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group38" type="group">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_reg_opcode" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_opcode[1:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_opcode[1:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_reg_trans1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_trans1</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_trans1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_reg_trans2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_trans2</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_trans2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_reg_col1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_col1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_col1[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_reg_row1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_row1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_row1[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_reg_col2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_col2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_col2[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_reg_addr0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_addr0[11:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_addr0[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_reg_addr1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_addr1[11:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_addr1[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xbus_reg_addr2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xbus_reg_addr2[11:0]</obj_property>
+         <obj_property name="ObjectShortName">xbus_reg_addr2[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_overflow_ff2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_overflow_ff2</obj_property>
+         <obj_property name="ObjectShortName">seq_overflow_ff2</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group16" type="group">
+      <obj_property name="label">XDMA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xdma_en1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xdma_en1</obj_property>
+         <obj_property name="ObjectShortName">xdma_en1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xdma_en2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xdma_en2</obj_property>
+         <obj_property name="ObjectShortName">xdma_en2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xdma_wr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xdma_wr</obj_property>
+         <obj_property name="ObjectShortName">xdma_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xdma_addr1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xdma_addr1[11:0]</obj_property>
+         <obj_property name="ObjectShortName">xdma_addr1[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xdma_addr2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xdma_addr2[11:0]</obj_property>
+         <obj_property name="ObjectShortName">xdma_addr2[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xdma_data_in1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xdma_data_in1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">xdma_data_in1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xdma_data_in2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xdma_data_in2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">xdma_data_in2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/xdma_data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xdma_data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">xdma_data_out[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group85" type="group">
+      <obj_property name="label">Handshake</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_start_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_start_req</obj_property>
+         <obj_property name="ObjectShortName">seq_start_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_start_ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_start_ack</obj_property>
+         <obj_property name="ObjectShortName">seq_start_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_finish_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_finish_req</obj_property>
+         <obj_property name="ObjectShortName">seq_finish_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_finish_ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_finish_ack</obj_property>
+         <obj_property name="ObjectShortName">seq_finish_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_busy" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_busy</obj_property>
+         <obj_property name="ObjectShortName">seq_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_overflow" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_overflow</obj_property>
+         <obj_property name="ObjectShortName">seq_overflow</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_overflow_ff2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_overflow_ff2</obj_property>
+         <obj_property name="ObjectShortName">seq_overflow_ff2</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group23" type="group">
+      <obj_property name="label">Sequencer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_state</obj_property>
+         <obj_property name="ObjectShortName">seq_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_stage_sr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_stage_sr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">seq_stage_sr[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_write_sr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_write_sr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">seq_write_sr[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_counter" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">seq_counter[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_x0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_x0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">seq_x0[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_y0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_y0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">seq_y0[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_x1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_x1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">seq_x1[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_y1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_y1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">seq_y1[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_x2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_x2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">seq_x2[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/seq_y2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">seq_y2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">seq_y2[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group56" type="group">
+      <obj_property name="label">Multiplier</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsmpx/SMPX/dma_din1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_din1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_din1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/dma_din2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_din2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_din2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/mul_pout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mul_pout[63:0]</obj_property>
+         <obj_property name="ObjectShortName">mul_pout[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/mul_overflow" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mul_overflow</obj_property>
+         <obj_property name="ObjectShortName">mul_overflow</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group61" type="group">
+      <obj_property name="label">Adder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsmpx/SMPX/add_ain" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">add_ain[47:0]</obj_property>
+         <obj_property name="ObjectShortName">add_ain[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/add_bin" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">add_bin[47:0]</obj_property>
+         <obj_property name="ObjectShortName">add_bin[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/add_pout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">add_pout[47:0]</obj_property>
+         <obj_property name="ObjectShortName">add_pout[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/add_overflow" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">add_overflow</obj_property>
+         <obj_property name="ObjectShortName">add_overflow</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group69" type="group">
+      <obj_property name="label">FIFO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbenchsmpx/SMPX/fifo_wr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_wr</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/fifo_rd" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_rd</obj_property>
+         <obj_property name="ObjectShortName">fifo_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/fifo_empty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_empty</obj_property>
+         <obj_property name="ObjectShortName">fifo_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/fifo_din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_din[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_din[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbenchsmpx/SMPX/fifo_dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_dout[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{63c1f54a-2197-4f32-b5b2-9d5144be02b8}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{c95c3138-a979-4ece-9f55-0d0f23bcdb92}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{58cb5c69-991b-4800-a596-9df3e4398454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{3c019124-10de-47c9-9c54-62faaf4d59cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\device">
+      <UniqueIdentifier>{06bb0c9c-02a6-4aaa-9c20-4ba9a182f068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\device">
+      <UniqueIdentifier>{3d7d01f0-8c95-4f62-8bed-11f1912bb90a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Terminal">
+      <UniqueIdentifier>{e76277bc-f831-43d6-b854-dea1005d0a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Terminal">
+      <UniqueIdentifier>{3c93d5c4-9beb-457f-9b6e-8f79e4c6edc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DeviceState">
+      <UniqueIdentifier>{36e8a9b5-fd9a-4d8a-8332-90200d4d2882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DeviceState">
+      <UniqueIdentifier>{614c2bc2-3062-461a-9239-c9223eb2af94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Terminal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Terminal.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Terminal.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_Terminal.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\common\trace.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\device\device.cpp">
+      <Filter>Source Files\device</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Terminal\TerminalConsole.cpp">
+      <Filter>Source Files\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TerminalConsole.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TerminalConsole.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Terminal\TerminalInfo.cpp">
+      <Filter>Source Files\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TerminalInfo.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TerminalInfo.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\device\hexload.cpp">
+      <Filter>Source Files\device</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Terminal\TerminalController.cpp">
+      <Filter>Source Files\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TerminalController.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TerminalController.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\device\btl_usb.cpp">
+      <Filter>Source Files\device</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\device\device_5A.cpp">
+      <Filter>Source Files\device</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Terminal\TerminalPipe.cpp">
+      <Filter>Source Files\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TerminalPipe.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TerminalPipe.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DeviceState\DeviceStatePipe.cpp">
+      <Filter>Source Files\DeviceState</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DeviceStatePipe.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DeviceStatePipe.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Terminal\TerminalAsync.cpp">
+      <Filter>Source Files\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TerminalAsync.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TerminalAsync.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Terminal\TerminalFile.cpp">
+      <Filter>Source Files\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TerminalFile.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TerminalFile.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DeviceState\DeviceStateDir.cpp">
+      <Filter>Source Files\DeviceState</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DeviceStateDir.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DeviceStateDir.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DeviceState\DeviceStateFile.cpp">
+      <Filter>Source Files\DeviceState</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DeviceStateFile.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DeviceStateFile.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Terminal\TerminalAccess.cpp">
+      <Filter>Source Files\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TerminalAccess.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TerminalAccess.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DeviceStateBase.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DeviceStateBase.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DeviceState\DeviceStateBase.cpp">
+      <Filter>Source Files\DeviceState</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\common\ini.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Terminal\TerminalLogger.cpp">
+      <Filter>Source Files\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TerminalLogger.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TerminalLogger.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Source\Terminal.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Terminal.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Terminal.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Terminal\TerminalConsole.h">
+      <Filter>Header Files\Terminal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Terminal\TerminalInfo.h">
+      <Filter>Header Files\Terminal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Terminal\TerminalController.h">
+      <Filter>Header Files\Terminal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\DeviceState.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Terminal\TerminalPipe.h">
+      <Filter>Header Files\Terminal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\DeviceState\DeviceStatePipe.h">
+      <Filter>Header Files\DeviceState</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Terminal\TerminalAsync.h">
+      <Filter>Header Files\Terminal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Terminal\TerminalFile.h">
+      <Filter>Header Files\Terminal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\DeviceState\DeviceStateDir.h">
+      <Filter>Header Files\DeviceState</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\DeviceState\DeviceStateFile.h">
+      <Filter>Header Files\DeviceState</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Terminal\TerminalAccess.h">
+      <Filter>Header Files\Terminal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\DeviceState\DeviceStateBase.h">
+      <Filter>Header Files\DeviceState</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Controller.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\Terminal\TerminalLogger.h">
+      <Filter>Header Files\Terminal</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_Terminal.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\common\trace.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\device\device.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\common\convqstr.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\device\hexload.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\device\adler32.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\device\btl_base.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\device\btl_usb.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\device\device_5A.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\device\message_struct.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\device\message_enum.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\common\convstr.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_Controller.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\device\controller_struct.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\common\ini.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
