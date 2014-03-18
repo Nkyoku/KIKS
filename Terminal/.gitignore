@@ -1,0 +1,7 @@
+﻿*.opensdf
+*.sdf
+GeneratedFiles/
+ipch/
+Debug/
+Release/
+Win32/

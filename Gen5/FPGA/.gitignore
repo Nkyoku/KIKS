@@ -1,0 +1,5 @@
+﻿FPGA.runs/
+FPGA.sim/*/
+*.log
+*.jou
+*.pdf
