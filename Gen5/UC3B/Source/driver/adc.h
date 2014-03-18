@@ -15,10 +15,10 @@ namespace ADC{
 	
 	static const unsigned short BATTERY_HIGH_THRESHOULD		= 1520;	// 1セルあたり3.8V
 	static const unsigned short BATTERY_MIDDLE_THRESHOULD	= 1400;	// 1セルあたり3.5V
-	//static const unsigned short BATTERY_LOW_THRESHOULD		= 1320;	// 1セルあたり3.3V
-	//static const unsigned short SWITCH_OFF_THRESHOULD		= 1120;	// 1セルあたり2.8V
-	static const unsigned short BATTERY_LOW_THRESHOULD		= 1000;	// 1セルあたり3.3V
-	static const unsigned short SWITCH_OFF_THRESHOULD		= 900;	// 1セルあたり2.8V
+	static const unsigned short BATTERY_LOW_THRESHOULD		= 1320;	// 1セルあたり3.3V
+	static const unsigned short SWITCH_OFF_THRESHOULD		= 1120;	// 1セルあたり2.8V
+	//static const unsigned short BATTERY_LOW_THRESHOULD		= 1000;	// 1セルあたり3.3V
+	//static const unsigned short SWITCH_OFF_THRESHOULD		= 900;	// 1セルあたり2.8V
 	
 	
 	enum BATLEVEL_e{

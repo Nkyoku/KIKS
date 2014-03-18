@@ -281,7 +281,7 @@ void TerminalController::checked(int state){
 
 // ローテーションが設定された
 void TerminalController::rotationChanged(int value){
-	m_Controller.VelR = -(double)value / (double)SLIDER_MAX;
+	m_Controller.VelR = (double)value / (double)SLIDER_MAX;
 	//Trace(L"Controller Rotation:%f", m_Controller.VelR);
 }
 

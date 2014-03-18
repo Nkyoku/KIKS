@@ -39,7 +39,7 @@ static NAKED InterruptFromFPGA(void);
 namespace MainTask{
 	
 	/* 定数 */
-	static const bool SILENT_MODE = true;	// ブザーを鳴らさない
+	static const bool SILENT_MODE = false;	// ブザーを鳴らさない
 	static const int PERIOD = 4;			// 動作間隔[ms]
 	static const int UPDATE_INTERVAL = 12;	// 情報の更新間隔[ms]
 	
@@ -92,7 +92,6 @@ namespace MainTask{
 			AVR32_GPIO.port[PIN_FPGA_nINIT >> 5].ierc = 1 << (PIN_FPGA_nINIT & 0x1F);
 			AVR32_GPIO.port[PIN_FPGA_nINIT >> 5].imr0s = 1 << (PIN_FPGA_nINIT & 0x1F);
 			AVR32_GPIO.port[PIN_FPGA_nINIT >> 5].imr1c = 1 << (PIN_FPGA_nINIT & 0x1F);
-			AVR32_GPIO.port[PIN_FPGA_nINIT >> 5].ifrc = 1 << (PIN_FPGA_nINIT & 0x1F);
 			
 			// 割り込み登録
 			Int::Register(IRQ_GPIO01, (void*)InterruptFromFPGA, IL_HIGH);
@@ -206,11 +205,11 @@ namespace MainTask{
 	// 動作中のループ
 	void TaskLoopRunning(void){
 		// 電源系統をON
-		//SetOut(PIN_PWR_12V, OUT_HIGH);
+		SetOut(PIN_PWR_12V, OUT_HIGH);
 		vTaskDelay(TASK_DELAY_MS(10));
-		//SetOut(PIN_PWR_MOTOR1, OUT_HIGH);
+		SetOut(PIN_PWR_MOTOR1, OUT_HIGH);
 		vTaskDelay(TASK_DELAY_MS(10));
-		//SetOut(PIN_PWR_MOTOR2, OUT_HIGH);
+		SetOut(PIN_PWR_MOTOR2, OUT_HIGH);
 		vTaskDelay(TASK_DELAY_MS(10));
 		
 		// レジスタ初期化
@@ -243,7 +242,6 @@ namespace MainTask{
 			result = xSemaphoreTake(Semaphore, TASK_DELAY_MS(PERIOD));
 			if (result == pdTRUE){
 				// 割り込みが起きた
-				xprintf("Int!\n");
 			}
 			
 			// キックをする必要があるか調べる

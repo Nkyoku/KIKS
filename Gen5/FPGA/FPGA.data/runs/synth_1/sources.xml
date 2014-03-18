@@ -23,14 +23,14 @@
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/Source/openMSP430/openMSP430_defines.v">
+    <File Path="$PPRDIR/Source/openMSP430/openMSP430_undefines.v">
       <FileInfo>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInImplementation" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/Source/openMSP430/openMSP430_undefines.v">
+    <File Path="$PPRDIR/Source/openMSP430/openMSP430_defines.v">
       <FileInfo>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInImplementation" Val="1"/>

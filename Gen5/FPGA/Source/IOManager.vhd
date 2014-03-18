@@ -301,9 +301,9 @@ begin
 				-- 動作中
 				pbus_reg_gpoa	<= (pbus_reg_gpoa or p_gpoas) and p_gpoac;
 				xbus_reg_gpoa	<= (xbus_reg_gpoa or x_gpoas) and x_gpoac;
-				pxbus_reg_gpob	<= (pxbus_reg_gpob or p_gpobs or x_gpobs) and (p_gpobc or x_gpobc);
-				pxbus_reg_gpoc	<= (pxbus_reg_gpoc or p_gpocs or x_gpocs) and (p_gpocc or x_gpocc);
-				pxbus_reg_gpod	<= (pxbus_reg_gpod or p_gpods or x_gpods) and (p_gpodc or x_gpodc);
+				pxbus_reg_gpob	<= (pxbus_reg_gpob or p_gpobs or x_gpobs) and (p_gpobc and x_gpobc);
+				pxbus_reg_gpoc	<= (pxbus_reg_gpoc or p_gpocs or x_gpocs) and (p_gpocc and x_gpocc);
+				pxbus_reg_gpod	<= (pxbus_reg_gpod or p_gpods or x_gpods) and (p_gpodc and x_gpodc);
 				
 			end if;
 		end if;
