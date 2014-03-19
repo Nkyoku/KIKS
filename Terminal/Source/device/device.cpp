@@ -45,7 +45,14 @@ iDevice* iDevice::Search(const std::wstring &phy){
 		// USB
 		return SearchViaUSB();
 	}else if (0 == phy.find_first_of(L"COM", 0)){
-		// シリアルポート
+		// COMポート
+		int port, baudrate;
+		port = _wtoi(phy.c_str() + 3);
+		baudrate = _wtoi(phy.c_str() + phy.find_first_of(L":", 0) + 1);
+
+
+
+
 		return nullptr;
 	}else{
 		return nullptr;

@@ -15,6 +15,8 @@
 #include <QString>
 #include <QGraphicsScene>
 
+#include <map>
+
 
 
 class TerminalInfo : public QObject{
@@ -40,6 +42,11 @@ private:
 	QAction *m_RebootActionDFU;
 	QAction *m_RebootActionAPP;
 	QAction *m_RebootActionSafeAPP;
+	QAction *m_PhyActionBaudrate;
+
+	std::map<QAction*, std::wstring> m_ActionMap;
+
+	int m_Baudrate;
 
 
 
@@ -60,6 +67,18 @@ public:
 private:
 	// COMポートを列挙して追加
 	void EnumCOMPort(void);
+
+public:
+	// ボーレートを取得
+	int getBaudrate(void){
+		return m_Baudrate;
+	}
+
+	// ボーレートを設定
+	void setBaudrate(int value){
+		m_Baudrate = value;
+	}
+
 
 
 

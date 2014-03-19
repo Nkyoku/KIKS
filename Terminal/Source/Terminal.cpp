@@ -129,6 +129,11 @@ Terminal::Terminal(QWidget *parent) : QMainWindow(parent), m_ds(this){
 		setting.Read(L"Path", L"Coprocessor", buf);
 		m_access->setPath('C', buf);
 
+		// 設定の読み込み
+		int baudrate = m_info->getBaudrate();
+		setting.Read(L"Setting", L"Baudrate", baudrate);
+		m_info->setBaudrate(baudrate);
+
 		// ウィンドウ座標・サイズの読み込み
 		int pos_x, pos_y, size_w, size_h;
 		setting.Read(L"Window", L"Maximize", maximized);
@@ -174,6 +179,9 @@ Terminal::~Terminal(){
 		setting.Write(L"Path", L"Bitstream", str.c_str());
 		m_access->getPath('C', str);
 		setting.Write(L"Path", L"Coprocessor", str.c_str());
+
+		// 設定の保存
+		setting.Write(L"Setting", L"Baudrate", std::to_wstring((long long)m_info->getBaudrate()).c_str());
 
 		// ウィンドウ座標・サイズの保存
 		setting.Write(L"Window", L"Maximize", this->isMaximized() ? 1 : 0);

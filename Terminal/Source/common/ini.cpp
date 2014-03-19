@@ -58,7 +58,7 @@ void clINI::Read(const wchar_t *section, const wchar_t *key, wchar_t *dest_strin
 // INIƒtƒ@ƒCƒ‹‚©‚ç®”‚ğ“Ç‚İæ‚è
 void clINI::Read(const wchar_t *section, const wchar_t *key, int &dest_integer){
 	if (m_FilePath[0] != L'\0'){
-		dest_integer = GetPrivateProfileInt(section, key, 0, m_FilePath);
+		dest_integer = GetPrivateProfileInt(section, key, dest_integer, m_FilePath);
 	}else{
 		dest_integer = 0;
 	}

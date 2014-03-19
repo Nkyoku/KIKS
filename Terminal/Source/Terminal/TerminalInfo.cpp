@@ -15,6 +15,7 @@
 #include <QGraphicsTextItem>
 #include <QTextCursor>
 #include <QTextBlockFormat>
+#include <QInputDialog>
 
 
 
@@ -22,7 +23,8 @@
 TerminalInfo::TerminalInfo(QStatusBar *status, QGraphicsView *icon, QLabel *name, QLabel *version,
 		QPushButton *reboot, QPushButton *connect_, QPushButton *disconnect_)
 	: m_StatusBar(status), m_IconDevice(icon), m_LabelName(name), m_LabelVersion(version),
-	m_ButtonReboot(reboot), m_ButtonConnect(connect_), m_ButtonDisconnect(disconnect_), m_Connected(false)
+	m_ButtonReboot(reboot), m_ButtonConnect(connect_), m_ButtonDisconnect(disconnect_), m_Connected(false),
+	m_PhyActionBaudrate(nullptr), m_Baudrate(9600)
 {
 	// ステータスバーにアイテムを作成
 	m_Progress = new QProgressBar();
@@ -40,11 +42,6 @@ TerminalInfo::TerminalInfo(QStatusBar *status, QGraphicsView *icon, QLabel *name
 	QMenu *c_menu = new QMenu();
 	m_ButtonConnect->setMenu(c_menu);
 	m_PhyGroup = new QActionGroup(c_menu);
-	QAction *usb_action;
-	usb_action = c_menu->addAction(tr("USB"));
-	usb_action->setCheckable(true);
-	//usb_action->setChecked(true);
-	usb_action->setActionGroup(m_PhyGroup);
 	
 	// 再起動ボタンにつけるメニューを作成
 	QMenu *r_menu = new QMenu();
@@ -56,7 +53,6 @@ TerminalInfo::TerminalInfo(QStatusBar *status, QGraphicsView *icon, QLabel *name
 	// アイコン表示用のシーンの作成
 	m_Scene = new QGraphicsScene(this);
 	m_IconDevice->setScene(m_Scene);
-	//m_IconDevice->setRenderHints(QPainter::Antialiasing);
 	
 	// シグナルを接続
 	connect(c_menu, SIGNAL(triggered(QAction *)), this, SLOT(connectPushed(QAction *)));
@@ -64,7 +60,15 @@ TerminalInfo::TerminalInfo(QStatusBar *status, QGraphicsView *icon, QLabel *name
 	connect(r_menu, SIGNAL(triggered(QAction *)), this, SLOT(rebootPushed(QAction *)));
 	
 
-	// COMポートを列挙
+
+	// 接続ボタンにUSBを追加
+	QAction *usb_action;
+	usb_action = c_menu->addAction(tr("USB"));
+	usb_action->setCheckable(true);
+	usb_action->setActionGroup(m_PhyGroup);
+	m_ActionMap[usb_action] = L"USB";
+
+	// 接続ボタンにCOMポートを追加
 	EnumCOMPort();
 }
 
@@ -108,7 +112,6 @@ void TerminalInfo::drawIcon(unsigned int id){
 	path.moveTo(32, 10);
 	path.arcTo(0, 0, 64, 64, 137.5, 265);
 	m_Scene->addPath(path, pen, black_brush);
-	//m_Scene->addEllipse(26, 26, 12, 12, pen, blue_brush);
 	m_Scene->addEllipse(6, 12, 12, 12, pen, table[id] & 0x8 ? green_brush : purple_brush);
 	m_Scene->addEllipse(46, 12, 12, 12, pen, table[id] & 0x4 ? green_brush : purple_brush);
 	m_Scene->addEllipse(14, 47, 12, 12, pen, table[id] & 0x2 ? green_brush : purple_brush);
@@ -163,7 +166,7 @@ void TerminalInfo::EnumCOMPort(void){
 				DWORD reg_type, reg_length = sizeof(port_number);
 				result = RegQueryValueEx(hKey, L"PortName", 0, &reg_type, (BYTE*)port_number, &reg_length);
 				RegCloseKey(hKey);
-				/*if (result == ERROR_SUCCESS){
+				if (result == ERROR_SUCCESS){
 					// メニューに追加していく
 					QString text;
 					text = WCharToQString(port_number) + " : " + WCharToQString(port_name);
@@ -173,12 +176,21 @@ void TerminalInfo::EnumCOMPort(void){
 					new_action = m_ButtonConnect->menu()->addAction(text);
 					new_action->setCheckable(true);
 					new_action->setActionGroup(m_PhyGroup);
-				}*/
+					m_ActionMap[new_action] = port_number;
+
+					detect = true;
+				}
 			}
 		}
 		free(sp_didd);
 	}
 	SetupDiDestroyDeviceInfoList(hDevinfo);
+
+	if (detect == true){
+		// COMポートが1つ以上見つかったら、ボーレートの設定ダイアログを出す項目を追加
+		m_ButtonConnect->menu()->addSeparator();
+		m_PhyActionBaudrate = m_ButtonConnect->menu()->addAction(WCharToQString(L"ボーレート設定..."));
+	}
 }
 
 // 有効にする
@@ -218,7 +230,22 @@ void TerminalInfo::setProgress(int value){
 // 接続メニューが押された
 void TerminalInfo::connectPushed(QAction *action){
 	//Trace(L"Triggered '%s'", QStringToWString(action->text()).c_str());
-	emit changeConnection(&QStringToWString(action->text()), true, true);
+	auto it = m_ActionMap.find(action);
+	if (it != m_ActionMap.end()){
+		// 接続
+		std::wstring text = it->second;
+		if (text.find_first_of(L"COM", 0) == 0){
+			// COMポートだったら後ろにボーレートを付与
+			text.append(L":");
+			text.append(std::to_wstring((long long)m_Baudrate));
+		}
+		emit changeConnection(&text, true, true);
+	}else{
+		if (action == m_PhyActionBaudrate){
+			// ボーレートの設定ダイアログ
+			m_Baudrate = QInputDialog::getInt(m_ButtonConnect, WCharToQString(L"ボーレートの設定"), WCharToQString(L"ボーレート"), m_Baudrate, 0);
+		}
+	}
 }
 
 // 切断ボタンが押された
