@@ -45,7 +45,6 @@ namespace XBee{
 		
 		while(UART.LSR & 0x01){
 			char c = UART.DATA;
-			UART.DATA = c;
 			
 			if (size < (RXBUFSIZE - 1)){
 				UartRx.Buf[size] = c;

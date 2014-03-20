@@ -129,6 +129,9 @@ namespace Controller{
 	
 	// キックの指示を送る
 	static void SendKickEnable(short power){
+		if (GetIn(PIN_BALL_DETECT) == IN_LOW){
+			power = 0;
+		}
 		SMEM.KickEnable = power;
 		if (power != 0){
 			SetOut(PIN_nINIT, OUT_HIGH);	// nINITピンをHにしてAVR32に通知

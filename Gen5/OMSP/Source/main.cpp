@@ -94,11 +94,11 @@ int main(void){
 		}
 		
 		// ボールセンサー
-		/*if (GetIn(PIN_BALL_DETECT) == IN_HIGH){
+		if (GetIn(PIN_BALL_DETECT) == IN_HIGH){
 			SetOut(PIN_LED7, OUT_HIGH);
 		}else{
 			SetOut(PIN_LED7, OUT_LOW);
-		}*/
+		}
 		
 		if (Controller::IsControllerEnabled() == true){
 			SetOut(PIN_LED4, OUT_HIGH);
