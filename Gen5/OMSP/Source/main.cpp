@@ -35,6 +35,9 @@ int main(void){
 	PORT[1].OUT = IO_BIT(PIN_PWR_BALL) | IO_BIT(PIN_PWR_SENSORS345) | IO_BIT(PIN_PWR_SENSORS12) | IO_BIT(PIN_PWR_5V);
 	PORT[2].OUT = IO_BIT(PIN_EXT1_nCS);
 	
+	// Motor(エンコーダーの分解能)の初期化
+	Motor::Init();
+
 	// MPU-6000の初期化
 	MPU::Init();
 	

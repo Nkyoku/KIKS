@@ -42,7 +42,7 @@ namespace Motor{
 	static const double P_WHEEL_CIRCUMFERENCE	// ホイールの外周[m]
 							= M_PI * 0.05;
 	static const double P_REGISTANCE			// モーター+モータードライバの抵抗[Ω]
-							= (1.20 + 0.08) * 2;
+							= 1.20 + 0.08 * 2;
 	static const double P_SPEED_CONSTANT		// モーターの速度定数[rps/V]
 							= 6.23333;
 	static const double P_TORQUE_CONSTANT		// モーターのトルク定数[Nm/A] 
@@ -89,8 +89,8 @@ namespace Motor{
 	};
 	
 	long GAINS[5] = {				// ゲイン
-		0,//TO_FIX_L(K_P),
-		0,//TO_FIX_L(K_I),
+		TO_FIX_L(K_P),
+		TO_FIX_L(K_I),
 		0,//TO_FIX_L(K_D),
 		TO_FIX_L(K_E),
 		0,//TO_FIX_L(K_C)
@@ -146,10 +146,10 @@ namespace Motor{
 	void Init(void){
 		if (SMEM.HiResEncoder == 0){
 			// 低分解能エンコーダを使用
-			PULSE_TO_RPS = to_fix(PULSE_TO_RPS_LO);
+			PULSE_TO_RPS = to_fix(PULSE_TO_RPS_LO * -1);
 		}else{
 			// 高分解能エンコーダを使用
-			PULSE_TO_RPS = to_fix(PULSE_TO_RPS_HI);
+			PULSE_TO_RPS = to_fix(PULSE_TO_RPS_HI * -1);
 		}
 		
 		
@@ -263,7 +263,7 @@ namespace Motor{
 		in_vector.m(0, 0) = error;
 		in_vector.m(0, 1) = integ;
 		in_vector.m(0, 2) = error - last.Error;
-		in_vector.m(0, 3) = next.TargetSpeed;
+		in_vector.m(0, 3) = next.RealSpeed;
 		Matrix::Multiply((matrix<1, 1>&)output, *gain_matrix, in_vector);
 		Matrix::WaitForOperation();
 		
