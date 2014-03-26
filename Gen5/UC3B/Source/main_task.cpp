@@ -306,28 +306,30 @@ namespace MainTask{
 				// ログの送信
 				unsigned short buf[15];
 				if (FPGA::Read(FPGA::QMOTOR_SR, buf, 11) == true){
-					if (FPGA::Read(FPGA::IOM_GPIB, buf + 11, 2) == true){
-						if (FPGA::Read(FPGA::DRMOT_SR, buf + 5, 2) == true){
-							using namespace Logger;
-							portENTER_CRITICAL();
-							AddTime(xTaskGetTickCount());
-							unsigned short ot_oc = buf[0];
-							AddDataHalf(ID_BALL_DETECT, buf[11] >> 14 & 0x1);
-							AddDataHalf(ID_MOTOR1_SENSOR, (buf[11] << 2 & 0x7C) | (ot_oc >> 4 & 0x3));
-							AddDataHalf(ID_MOTOR2_SENSOR, (buf[11] >> 3 & 0x7C) | (ot_oc >> 6 & 0x3));
-							AddDataHalf(ID_MOTOR3_SENSOR, (buf[12] << 2 & 0x7C) | (ot_oc >> 8 & 0x3));
-							AddDataHalf(ID_MOTOR4_SENSOR, (buf[12] >> 3 & 0x7C) | (ot_oc >> 10 & 0x3));
-							AddDataHalf(ID_MOTOR5_SENSOR, (buf[12] >> 8 & 0x1C) | (buf[5] >> 4 & 0x3));
-							AddDataHalf(ID_MOTOR1_DUTY, buf[1]);
-							AddDataHalf(ID_MOTOR2_DUTY, buf[2]);
-							AddDataHalf(ID_MOTOR3_DUTY, buf[3]);
-							AddDataHalf(ID_MOTOR4_DUTY, buf[4]);
-							AddDataHalf(ID_MOTOR5_DUTY, buf[6]);
-							AddDataHalf(ID_MOTOR1_SPEED, buf[7]);
-							AddDataHalf(ID_MOTOR2_SPEED, buf[8]);
-							AddDataHalf(ID_MOTOR3_SPEED, buf[9]);
-							AddDataHalf(ID_MOTOR4_SPEED, buf[10]);
-							portEXIT_CRITICAL();
+					if (FPGA::Read(FPGA::IOM_GPIA, buf + 11, 1) == true){
+						if (FPGA::Read(FPGA::IOM_GPIB, buf + 12, 2) == true){
+							if (FPGA::Read(FPGA::DRMOT_SR, buf + 6, 2) == true){
+								using namespace Logger;
+								portENTER_CRITICAL();
+								AddTime(xTaskGetTickCount());
+								unsigned short ot_oc = buf[0];
+								AddDataHalf(ID_BALL_DETECT, buf[11]);
+								AddDataHalf(ID_MOTOR1_SENSOR, (buf[12] << 2 & 0x7C) | (ot_oc >> 4 & 0x3));
+								AddDataHalf(ID_MOTOR2_SENSOR, (buf[12] >> 3 & 0x7C) | (ot_oc >> 6 & 0x3));
+								AddDataHalf(ID_MOTOR3_SENSOR, (buf[13] << 2 & 0x7C) | (ot_oc >> 8 & 0x3));
+								AddDataHalf(ID_MOTOR4_SENSOR, (buf[13] >> 3 & 0x7C) | (ot_oc >> 10 & 0x3));
+								AddDataHalf(ID_MOTOR5_SENSOR, (buf[13] >> 8 & 0x1C) | (buf[5] >> 4 & 0x3));
+								AddDataHalf(ID_MOTOR1_DUTY, buf[1]);
+								AddDataHalf(ID_MOTOR2_DUTY, buf[2]);
+								AddDataHalf(ID_MOTOR3_DUTY, buf[3]);
+								AddDataHalf(ID_MOTOR4_DUTY, buf[4]);
+								AddDataHalf(ID_MOTOR5_DUTY, buf[6]);
+								AddDataHalf(ID_MOTOR1_SPEED, buf[7]);
+								AddDataHalf(ID_MOTOR2_SPEED, buf[8]);
+								AddDataHalf(ID_MOTOR3_SPEED, buf[9]);
+								AddDataHalf(ID_MOTOR4_SPEED, buf[10]);
+								portEXIT_CRITICAL();
+							}
 						}
 					}
 				}
