@@ -89,8 +89,8 @@ namespace Motor{
 	};
 	
 	long GAINS[5] = {				// ゲイン
-		0, // TO_FIX_L(K_P),
-		0, // TO_FIX_L(K_I),
+		TO_FIX_L(K_P),
+		TO_FIX_L(K_I),
 		0,//TO_FIX_L(K_D),
 		TO_FIX_L(K_E),
 		0,//TO_FIX_L(K_C)
@@ -268,7 +268,7 @@ namespace Motor{
 		in_vector.m(0, 0) = error;
 		in_vector.m(0, 1) = integ;
 		in_vector.m(0, 2) = error - last.Error;
-		in_vector.m(0, 3) = next.TargetSpeed;
+		in_vector.m(0, 3) = next.RealSpeed;
 		Matrix::Multiply((matrix<1, 1>&)output, *gain_matrix, in_vector);
 		Matrix::WaitForOperation();
 		
