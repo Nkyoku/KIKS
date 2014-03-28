@@ -56,6 +56,8 @@ namespace Motor{
 							= 0.0;
 	static const double K_E				// Ke:逆起電力ゲイン
 							= 1.0 / P_SPEED_CONSTANT;
+	static const double K_R				// Kr:回転暴走防止ゲイン
+							= 1.0;
 	static const double K_C				// Kc:電流制限ゲイン
 							= 0.0;
 	
@@ -93,6 +95,7 @@ namespace Motor{
 		0, // TO_FIX_L(K_I),
 		0,//TO_FIX_L(K_D),
 		TO_FIX_L(K_E),
+		TO_FIX_L(K_R),
 		0,//TO_FIX_L(K_C)
 	};
 	
@@ -123,6 +126,13 @@ namespace Motor{
 	};
 	MOTORSTATE_t m_LastMotorState[4];
 	MOTORSTATE_t m_NextMotorState[4];
+
+	struct REALMOTORSTATE_t{
+		fix16 PararelSpeed;			// モーターの回転から算出される平行移動量
+		fix16 RotationSpeed;		// モーターの回転から算出される回転移動量
+
+	};
+	REALMOTORSTATE_t m_RealMotorState;
 	
 	// ドリブルモーターの制御情報
 	short m_DribbleDutySetting;		// PWMデューティ設定値
@@ -172,6 +182,10 @@ namespace Motor{
 			m_NextMotorState[1].RealSpeed = PULSE_TO_RPS * to_fix(QMOTOR.ROT[1]);
 			m_NextMotorState[2].RealSpeed = PULSE_TO_RPS * to_fix(QMOTOR.ROT[2]);
 			m_NextMotorState[3].RealSpeed = PULSE_TO_RPS * to_fix(QMOTOR.ROT[3]);
+			m_RealMotorState.RotationSpeed = (m_NextMotorState[0].RealSpeed
+											+ m_NextMotorState[1].RealSpeed
+											+ m_NextMotorState[2].RealSpeed
+											+ m_NextMotorState[3].RealSpeed) / 4;
 			
 			// ベクトル分解
 			VectorDecomposition();
@@ -193,6 +207,7 @@ namespace Motor{
 			SendData2(ID_MOTOR2_DUTY, m_NextMotorState[1].DutySetting);
 			SendData2(ID_MOTOR3_DUTY, m_NextMotorState[2].DutySetting);
 			SendData2(ID_MOTOR4_DUTY, m_NextMotorState[3].DutySetting);
+
 			// モータードライバに出力
 			QMOTOR.DUTY[0] = m_NextMotorState[0].DutySetting;
 			QMOTOR.DUTY[1] = m_NextMotorState[1].DutySetting;
@@ -248,8 +263,8 @@ namespace Motor{
 	
 	// 車輪のモーターの制御
 	static void WheelMotorProc(MOTORSTATE_t &last, MOTORSTATE_t &next){
-		matrix<4, 1> *gain_matrix = (matrix<4, 1>*)GAINS;
-		matrix<1, 4> in_vector;
+		matrix<5, 1> *gain_matrix = (matrix<5, 1>*)GAINS;
+		matrix<1, 5> in_vector;
 		fix16 output;
 		fix16 error, integ;
 		short duty;
@@ -262,13 +277,14 @@ namespace Motor{
 		
 
 		
-		
+
 		
 		// PIDを計算
 		in_vector.m(0, 0) = error;
 		in_vector.m(0, 1) = integ;
 		in_vector.m(0, 2) = error - last.Error;
-		in_vector.m(0, 3) = next.TargetSpeed;
+		in_vector.m(0, 3) = next.RealSpeed;
+		in_vector.m(0, 4) = Controller::m_State.Rotation - m_RealMotorState.RotationSpeed;
 		Matrix::Multiply((matrix<1, 1>&)output, *gain_matrix, in_vector);
 		Matrix::WaitForOperation();
 		
