@@ -34,9 +34,6 @@ int main(void){
 	PORT[0].OUT = 0;
 	PORT[1].OUT = IO_BIT(PIN_PWR_BALL) | IO_BIT(PIN_PWR_SENSORS345) | IO_BIT(PIN_PWR_SENSORS12) | IO_BIT(PIN_PWR_5V);
 	PORT[2].OUT = IO_BIT(PIN_EXT1_nCS);
-	
-	// Motor(エンコーダーの分解能)の初期化
-	Motor::Init();
 
 	// MPU-6000の初期化
 	MPU::Init();
@@ -45,6 +42,9 @@ int main(void){
 	// I/Oの初期化からXBeeの初期化まで最低でも200ns以上かけること
 	XBee::Init();
 	
+	// モーターの初期化
+	Motor::Init();
+
 	// ↓ここでカルマンフィルタの初期化
 	// Kalman::Init();
 	
@@ -69,7 +69,7 @@ int main(void){
 			
 			// ↓ここでカルマンフィルタ更新1
 			//if (Controller::IsVisionEnabled() == true){
-			//Kalman::Proc1();
+			//	Kalman::Proc1();
 			//}
 		}
 		g_IntPeriodicOccured = false;
@@ -96,13 +96,14 @@ int main(void){
 			cnt = 0;
 		}
 		
-		// ボールセンサー
+		// ボールセンサーの状態を表示
 		if (GetIn(PIN_BALL_DETECT) == IN_HIGH){
 			SetOut(PIN_LED7, OUT_HIGH);
 		}else{
 			SetOut(PIN_LED7, OUT_LOW);
 		}
 		
+		// 操作が有効か表示
 		if (Controller::IsControllerEnabled() == true){
 			SetOut(PIN_LED4, OUT_HIGH);
 		}else{
