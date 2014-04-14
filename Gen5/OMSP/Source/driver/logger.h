@@ -41,18 +41,24 @@ namespace Logger{
 		ID_ROTATION_Z		= 555,	// 回転速度 X軸
 		
 		ID_MOTOR1_TARGET_SPEED		= 600,	// モーター1 指令速度
-		ID_MOTOR1_REAL_SPEED		= 601,	// モーター1 現在速度
-		ID_MOTOR1_TARGET_CURRENT	= 602,	// モーター1 指令速度
-		ID_MOTOR1_REAL_CURRENT		= 603,	// モーター1 現在速度
-		
-		ID_MOTOR2_REAL_SPEED 		= 604,	//　モーター2現在速度
-		ID_MOTOR3_REAL_SPEED 		= 605,	//　モーター3現在速度
-		ID_MOTOR4_REAL_SPEED 		= 606,	//　モーター4現在速度
+		ID_MOTOR2_TARGET_SPEED		= 601,	// モーター2 指令速度
+		ID_MOTOR3_TARGET_SPEED		= 602,	// モーター3 指令速度
+		ID_MOTOR4_TARGET_SPEED		= 603,	// モーター4 指令速度
 
-		ID_MOTOR1_DUTY				= 607,	// モーター1のduty
-		ID_MOTOR2_DUTY				= 608,	// モーター2のduty
-		ID_MOTOR3_DUTY				= 609,	// モーター3のduty
-		ID_MOTOR4_DUTY				= 610,	// モーター4のduty
+		ID_MOTOR1_REAL_SPEED		= 604,	// モーター1 現在速度
+		ID_MOTOR2_REAL_SPEED		= 605,	// モーター1 現在速度
+		ID_MOTOR3_REAL_SPEED		= 606,	// モーター1 現在速度
+		ID_MOTOR4_REAL_SPEED		= 607,	// モーター1 現在速度
+
+		ID_MOTOR1_DUTY				= 608,	// モーター1 duty
+		ID_MOTOR2_DUTY				= 609,	// モーター2 duty
+		ID_MOTOR3_DUTY				= 610,	// モーター3 duty
+		ID_MOTOR4_DUTY				= 611,	// モーター4 duty
+		
+		ID_MOTOR1_ERROR				= 612,	// モーター1 error
+		ID_MOTOR2_ERROR				= 613,	// モーター2 error
+		ID_MOTOR3_ERROR				= 614,	// モーター3 error
+		ID_MOTOR4_ERROR				= 615,	// モーター4 error
 		
 		ID_VISION_X					= 620,	//visionのX
 		ID_VISION_Y					= 621,	//visionのY

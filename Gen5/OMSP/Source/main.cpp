@@ -89,9 +89,9 @@ int main(void){
 		static volatile int cnt = 0;
 		cnt++;
 		if (cnt < 100){
-			SetOut(PIN_LED5, OUT_HIGH);
+			SetOut(PIN_LED6, OUT_HIGH);
 		}else if (cnt < 200){
-			SetOut(PIN_LED5, OUT_LOW);
+			SetOut(PIN_LED6, OUT_LOW);
 		}else{
 			cnt = 0;
 		}
@@ -105,9 +105,9 @@ int main(void){
 		
 		// 操作が有効か表示
 		if (Controller::IsControllerEnabled() == true){
-			SetOut(PIN_LED4, OUT_HIGH);
+			SetOut(PIN_LED5, OUT_HIGH);
 		}else{
-			SetOut(PIN_LED4, OUT_LOW);
+			SetOut(PIN_LED5, OUT_LOW);
 		}
 		
 		Logger::SendData2(Logger::ID_CYCLE_1, CYCLE1);
