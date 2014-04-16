@@ -1,9 +1,10 @@
-﻿/**	@file
-	@brief 諸定義
-*/
+﻿/**
+ * @file
+ * @brief 諸定義
+ */
 
-#ifndef _DEFINE_H_
-#define _DEFINE_H_
+#ifndef DEFINE_H
+#define DEFINE_H
 
 #include "driver/OMSP.h"
 
@@ -23,4 +24,4 @@
 
 
 
-#endif
+#endif /* SMEM_H */

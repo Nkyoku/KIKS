@@ -1,9 +1,10 @@
-﻿/**	@file
-	@brief モーター制御
-*/
+﻿/**
+ * @file
+ * @brief モーター制御
+ */
 
-#ifndef _MOTOR_H_
-#define _MOTOR_H_
+#ifndef MOTOR_H
+#define MOTOR_H
 
 
 
@@ -19,4 +20,4 @@ namespace Motor{
 
 
 
-#endif
+#endif /* MOTOR_H */

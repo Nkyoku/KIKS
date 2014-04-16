@@ -1,9 +1,10 @@
-﻿/*	@file
-	@brief 共有メモリー
-*/
+﻿/**
+ * @file
+ * @brief 共有メモリー
+ */
 
-#ifndef _SMEM_H_
-#define _SMEM_H_
+#ifndef SMEM_H
+#define SMEM_H
 
 
 
@@ -61,4 +62,4 @@ extern volatile SMEM_t SMEM;
 
 
 
-#endif
+#endif /* SMEM_H */

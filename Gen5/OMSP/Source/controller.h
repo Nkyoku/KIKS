@@ -1,9 +1,10 @@
-﻿/**	@file
-	@brief コントローラ
-*/
+﻿/**
+ * @file
+ * @brief コントローラ
+ */
 
-#ifndef _CONTROLLER_H_
-#define _CONTROLLER_H_
+#ifndef CONTROLLER_H
+#define CONTROLLER_H
 
 #include "math/fix.h"
 
@@ -50,4 +51,4 @@ namespace Controller{
 
 
 
-#endif
+#endif /* CONTROLLER_H */

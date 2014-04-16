@@ -1,6 +1,7 @@
-﻿/*	@file
-	@brief BLDCモーター制御
-*/
+﻿/**
+ * @file
+ * @brief BLDCモーター制御
+ */
 
 #include "define.h"
 #include "misc.h"

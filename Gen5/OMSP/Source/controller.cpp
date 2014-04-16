@@ -1,6 +1,7 @@
-﻿/**	@file
-	@brief コントローラ
-*/
+﻿/**
+ * @file
+ * @brief コントローラ
+ */
 
 #include "controller.h"
 #include "define.h"

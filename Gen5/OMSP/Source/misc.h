@@ -1,9 +1,10 @@
-﻿/*	@file
-	@brief 諸関数
-*/
+﻿/**
+ * @file
+ * @brief 諸関数
+ */
 
-#ifndef _MISC_H_
-#define _MISC_H_
+#ifndef MISC_H
+#define MISC_H
 
 
 
@@ -39,4 +40,4 @@ template <typename T> static inline T delta_limit(T last_val, T next_val, T fall
 
 
 
-#endif
+#endif /* MISC_H */

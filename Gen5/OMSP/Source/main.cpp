@@ -1,6 +1,7 @@
-﻿/*	@file
-	@brief openMSP430コアで動くプログラム
-*/
+﻿/**
+ * @file
+ * @brief openMSP430コアで動くプログラム
+ */
 
 #include "define.h"
 #include "smem.h"
