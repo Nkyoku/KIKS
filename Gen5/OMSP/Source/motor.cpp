@@ -68,8 +68,8 @@ namespace Motor{
 	static const double MAX_DUTY_LIMIT		= 4000;
 	//static const double MAX_INTEGRATION	= 5000;
 	static const short DRIBBLE_RAMP_LIMIT	= 200;	// ドリブルモーターのPWMランプレート制限
-	static const short DRIBBLE_TABLE[4] = {			// ドリブルパワーとデューティ比の変換テーブル
-		0, -900, -1300, -2000
+	static const short DRIBBLE_TABLE[8] = {			// ドリブルパワーとデューティ比の変換テーブル
+		0, -500, -900, -1100, -1300, -1500, -1700, -2000
 	};
 	
 	static const double PULSE_TO_RPS_LO				// パルス数→回転数[rps]の換算係数 (低分解能, 高分解能)
@@ -292,7 +292,7 @@ namespace Motor{
 	
 	// ドリブルモーターの制御
 	static void DribbleMotorProc(void){
-		short power = Controller::m_State.DribblePower >> 6;
+		short power = Controller::m_State.DribblePower >> 5;
 		short last = m_DribbleDutySetting;
 		short next = DRIBBLE_TABLE[power];
 		next = delta_limit<short>(last, next, -DRIBBLE_RAMP_LIMIT, DRIBBLE_RAMP_LIMIT);

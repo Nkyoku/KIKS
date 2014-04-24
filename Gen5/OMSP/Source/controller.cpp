@@ -13,9 +13,10 @@
 
 
 
-#define FLAGS_DRIBBLE_POWER		0x3
+#define FLAGS_DRIBBLE_POWER		0x7
 #define FLAGS_KICK_TYPE			0x10
 #define FLAGS_KICK_ENABLE		0x20
+#define FLAGS_TURN_HIGH_BIT		0x40
 #define FLAGS_TURN_DIRECTION	0x80
 
 // 動作指令(パケット形式)
@@ -99,9 +100,10 @@ namespace Controller{
 		fix16 vel, dir, rot;
 		short drib, kick;
 		vel.m_Value = packet->Velocity;
-		dir.m_Value = packet->Direction;
+//		dir.m_Value = packet->Direction;
+		dir.m_Value = (packet->Flags & FLAGS_TURN_HIGH_BIT) ? (short)((short)packet->Direction += 256) : (short)packet->Direction;
 		rot.m_Value = (packet->Flags & FLAGS_TURN_DIRECTION) ? (short)(-(short)packet->Rotation) : (short)packet->Rotation;
-		drib = (packet->Flags & FLAGS_DRIBBLE_POWER) << 6;
+		drib = (packet->Flags & FLAGS_DRIBBLE_POWER) << 5;
 		if (packet->Flags & FLAGS_KICK_ENABLE){
 			if (packet->Flags & FLAGS_KICK_TYPE){
 				kick = packet->KickPower;
