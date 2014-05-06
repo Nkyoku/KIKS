@@ -36,8 +36,8 @@ namespace Charge{
 	static const unsigned char SUPPLY_LIMIT		= 130;		// 充電が開始できる電源電圧の10倍[V]
 	static const unsigned char SUPPLY_RETURN	= 140;		// 充電が再開できる電源電圧の10倍[V]
 	static const unsigned char BOOST_START		= 20;		// 昇圧を開始する電源電圧からの減少分の10倍[V]
-	static const unsigned char UPPER_LIMIT		= 200;		// (標準)充電終止電圧[V]
-	static const unsigned char LOWER_LIMIT		= 197;		// (標準)充電開始電圧[V]
+	static const unsigned char UPPER_LIMIT		= 220;		// (標準)充電終止電圧[V]
+	static const unsigned char LOWER_LIMIT		= 217;		// (標準)充電開始電圧[V]
 	static const unsigned char KICK_LIMIT		= 150;		// キック許可電圧[V]
 	
 	static const unsigned char CHARGE_PULSES		= 64;	// 1回の充電操作で何回パルスを出すか
